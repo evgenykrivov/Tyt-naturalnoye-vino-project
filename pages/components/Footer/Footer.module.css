@@ -1,0 +1,66 @@
+.heading {
+  padding: 75px 0 25px;
+  display: flex;
+  justify-content: center;
+  font-family: "Gilroy Medium";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  font-style: normal;
+  color: #FCFCFC;
+  width: 100%;
+}
+
+.follow {
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  outline-offset: 0;
+  border: 0;
+  color: #FCFCFC;
+  font-family: "Gilroy Medium";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  border-bottom: 1px solid #FCFCFC;
+  padding: 0 0 10px 0;
+  display: block;
+  width: calc(100% - 50px);
+  margin: 0 0 0 24px;
+}
+.input::placeholder {
+  color: #FCFCFC;
+  font-family: "Gilroy Medium";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.6;
+}
+
+.submit {
+  display: flex;
+  align-self: flex-end;
+  border-radius: 2px;
+  outline: none;
+  box-sizing: border-box;
+  padding: 0;
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  width: 60px;
+  margin: 0 0 0 20px;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 22px;
+}
+.submit:hover {
+  opacity: 0.4;
+}
+
+/*# sourceMappingURL=Footer.module.css.map */

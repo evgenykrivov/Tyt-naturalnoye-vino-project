@@ -1,0 +1,52 @@
+.WidgetSize {
+  display: flex;
+  position: absolute;
+  min-width: 100px;
+  left: 50%;
+  top: 1%;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%);
+  border-radius: 5px;
+  padding: 5px 15px;
+}
+
+@media screen and (1200px < width) {
+  .WidgetSize::before {
+    content: "XL w";
+  }
+
+  .WidgetSize {
+    background-color: red;
+  }
+}
+
+@media screen and (768px < width <= 1200px) {
+  .WidgetSize::before {
+    content: "X w";
+  }
+
+  .WidgetSize {
+    background-color: orange;
+  }
+}
+
+@media screen and (400px < width <= 768px) {
+  .WidgetSize::before {
+    content: "M w";
+  }
+
+  .WidgetSize {
+    background-color: yellow;
+  }
+}
+
+@media screen and (width <= 400px) {
+  .WidgetSize::before {
+    content: "S w";
+  }
+
+  .WidgetSize {
+    background-color: greenyellow;
+  }
+}

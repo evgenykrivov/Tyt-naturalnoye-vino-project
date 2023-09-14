@@ -1,7 +1,7 @@
-import styles from "./ViewPort.module.css"
+import styles from "./WidgetSize.module.scss"
 import React from "react"
 
-const ViewPort = () => {
+const WidgetSize = () => {
   const [ width, setWidth ] = React.useState(0)
 
   const handleResize = () => {
@@ -22,7 +22,7 @@ const ViewPort = () => {
       return onUnloadHandler
     }, [])
 
-  return <p className={ styles.ViewPort }>: { width } px</p>
+  return <p className={ styles.WidgetSize }>: { width } px</p>
 }
 
-export default ViewPort
+export default WidgetSize

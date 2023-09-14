@@ -1,0 +1,105 @@
+.main {
+  flex-grow: 1;
+  display: flex;
+
+  &__text {
+    font-family: 'Gilroy Medium';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 45px;
+    line-height: 45px;
+    margin: 0 auto;
+    max-width: calc(100% - 32px);
+    text-align: right;
+    height: 106px;
+    color: rgba(192, 71, 40, 1);
+    padding: 0 0 35px 0;
+  }
+
+  &__transfer {
+    float: right;
+    font-family: 'Gilroy Medium';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 43px;
+    line-height: 45px;
+    padding: 0 0 0 12px;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 344px) {
+    &__transfer {
+      float: left;
+      padding: 0;
+    }
+    &__text {
+      text-align: left;
+    }
+  }
+
+  &__image {
+    margin: 0 auto;
+    display: flex;
+    align-self: center;
+  }
+}
+
+.container {
+  display: flex;
+  max-width: max-content;
+  align-self: flex-end;
+  margin: 0 15px 0 0;
+
+  &__about {
+    font-family: "Gilroy Medium";
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(192, 71, 40, 1);
+  }
+}
+
+.description {
+  margin: 100px 20px 0;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 37px;
+
+  &__main {
+    font-family: "Gilroy Medium";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 27.5px;
+    color: rgba(192, 71, 40, 1);
+  }
+
+  &__extension {
+    margin: 7px 0 0 0;
+    font-family: "Gilroy Medium";
+    font-weight: 400;
+    font-style: normal;
+    align-self: flex-end;
+    font-size: 32px;
+    line-height: 27.5px;
+    color: rgba(192, 71, 40, 1);
+
+    &_blueColor {
+      color: #6BA5A9;
+    }
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-family: "Gilroy Regular";
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(192, 71, 40, 1);
+  font-size: 16px;
+  line-height: 25px;
+}

@@ -1,0 +1,47 @@
+@import "./fonts/fonts.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 576px;
+  margin: 0 auto;
+  background-color: #FCFCFC;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 1280px;
+  min-width: 344px;
+  margin: 0 auto;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  min-height: 50px;
+  display: flex;
+  margin: 0 0 60px 0;
+}
+
+footer {
+  margin: 100px 0 0 0;
+  background-color: #C04728;
+}
+
+
+
+/*# sourceMappingURL=globals.css.map */
