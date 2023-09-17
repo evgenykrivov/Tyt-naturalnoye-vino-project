@@ -63,4 +63,42 @@
   opacity: 0.4;
 }
 
+.container {
+  display: flex;
+  gap: 134px;
+  margin: 55px auto 0 auto;
+  width: calc(100% - 55px);
+}
+
+.links {
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  outline: none;
+  text-decoration: none;
+  font-family: "Gilroy Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+}
+.link:visited {
+  color: #FCFCFC;
+  text-decoration: none;
+}
+.link:hover {
+  opacity: 0.6;
+}
+
+.link_bold {
+  font-family: "Gilroy Medium";
+  font-weight: 500;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 /*# sourceMappingURL=Footer.module.css.map */

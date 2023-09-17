@@ -1,4 +1,5 @@
 import styles from "./Footer.module.scss"
+import Link from "next/link"
 
 const Footer = () => {
 
@@ -10,23 +11,21 @@ const Footer = () => {
         <input className={ styles.input } placeholder={ "Ваш E-mail" } type={ "email" }></input>
         <button className={ styles.submit }>/ТЫК</button>
       </form>
+      <div className={ styles.container }>
 
-      <nav>
-        <ul>
-          <li><a href="#">Покупателям</a></li>
-          <li><a href="#">Оплата и доставка</a></li>
-          <li><a href="#">Обратная связь</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul className={ styles.links }>
+          <Link className={ `${ styles.link } ${ styles.link_bold }` } href="/">Покупателям</Link>
+          <Link className={ styles.link } href="/">Оплата и доставка</Link>
+          <Link className={ styles.link } href="/">Обратная связь</Link>
+          <Link className={ styles.link } href="/">Контакты</Link>
         </ul>
-      </nav>
-      <nav>
-        <ul>
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Мероприятия</a></li>
 
+        <ul className={ styles.links }>
+          <Link className={ `${ styles.link } ${ styles.link_bold }` } href="/">О нас</Link>
+          <Link className={ styles.link } href="/">Новости</Link>
+          <Link className={ styles.link } href="/">Мероприятия</Link>
         </ul>
-      </nav>
+      </div>
     </footer>
   )
 }

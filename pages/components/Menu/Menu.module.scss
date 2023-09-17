@@ -1,0 +1,50 @@
+.burgerMenu {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.burgerButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  margin: auto 15px 10px 0;
+}
+
+.menu {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+.imageMenu {
+  display: flex;
+  margin: 47px 15px 0 0;
+}
+
+.link {
+  padding: 16px;
+  text-decoration: none;
+  font-family: "Gilroy Regular";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 2px;
+  border-bottom: 1px solid rgba(192, 71, 40, 0.3);
+  &:visited {
+    color: #C04728;
+    text-decoration: none;
+  }
+  &:hover {
+    opacity: 0.6;
+  }
+}

@@ -9,8 +9,15 @@
 
 }
 
-.burgerMenu {
+.imageMenu {
   display: flex;
   margin: 47px 15px 0 0;
+}
+
+.menu {
+  display: inline-block;
+  box-shadow: none;
+  background: transparent none;
+  cursor: pointer;
 }
 
