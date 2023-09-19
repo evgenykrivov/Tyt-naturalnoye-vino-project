@@ -1,7 +1,7 @@
 const linkName = [
   {
     name: "Коллекция",
-    link: "/collection"
+    link: "/shop"
   },
   {
     name: "Новости",
@@ -28,7 +28,7 @@ const wines = [
     smell: [
       "blackberry"
     ],
-    classification: "sweet",
+    classification: "Белое",
     alcohol: 2.5,
     sugar: 16,
     rating: 4,
@@ -36,4 +36,6 @@ const wines = [
     iconMobile: null
   }
 ]
-export default linkName
+
+const wineType = ["Красное", "Розовое", "Белое", "Голубое"]
+export {wines, linkName, wineType}

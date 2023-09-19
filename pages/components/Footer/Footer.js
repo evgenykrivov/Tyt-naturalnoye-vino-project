@@ -39,7 +39,7 @@ const Footer = () => {
             onChange={ (e) => setEmail(e.target.value) }
           ></input>
           <button type="submit" className={ styles.submit } onClick={ handleClick }>/ТЫК</button>
-        </form>) : (<h2>Email отправлен: { email }</h2>) }
+        </form>) : (<h2>Спасибо за подписку!</h2>) }
 
       <div className={ styles.container }>
         <ul className={ styles.links }>

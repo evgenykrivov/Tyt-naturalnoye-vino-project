@@ -10,5 +10,11 @@
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: "Gilroy Light";
+  src: local("Gilroy Light"), url("./Gilroy-Light.woff2") format("woff2"), url("./Gilroy-Light.woff") format("woff"), url("./Gilroy-Light.ttf") format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
 
 /*# sourceMappingURL=fonts.css.map */

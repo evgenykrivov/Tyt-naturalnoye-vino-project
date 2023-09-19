@@ -1,10 +1,10 @@
 import MainLayout from "@/pages/components/MainLayout"
-import WinesCollection from "@/pages/components/WinesCollection"
+import Shop from "pages/components/Shop"
 
 const index = () => (
   <>
     <MainLayout>
-      <WinesCollection/>
+      <Shop/>
     </MainLayout>
   </>
 )
