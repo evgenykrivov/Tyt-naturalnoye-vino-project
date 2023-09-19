@@ -1,18 +1,47 @@
 import styles from "./Footer.module.scss"
 import Link from "next/link"
+import { useState } from "react" // Импортируем useState
+
+//to do:
+// Add popup "not validation email"
 
 const Footer = () => {
+  const [ email, setEmail ] = useState("") // Создаем состояние для хранения значения поля email
+  const [ emailStatus, setEmailStatus ] = useState(false)
+  const handleClick = (e) => {
+    e.preventDefault()
 
+    if ( isValidEmail(email) ) {
+      setEmailStatus(true)
+      console.log("Email отправлен:", email)
+    } else {
+      alert("Пожалуйста, введите действительный E-mail.")
+    }
+  }
+
+  const isValidEmail = (value) => {
+    const emailPattern = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+    return emailPattern.test(value)
+  }
 
   return (
     <footer>
       <h3 className={ styles.heading }>ПОДПИСЫВАЙСЯ НА НАШИ НОВОСТИ</h3>
-      <form className={ styles.follow }>
-        <input className={ styles.input } placeholder={ "Ваш E-mail" } type={ "email" }></input>
-        <button className={ styles.submit }>/ТЫК</button>
-      </form>
-      <div className={ styles.container }>
 
+      { !emailStatus ? (
+        <form className={ styles.follow }>
+          <input
+            pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$"
+            className={ styles.input }
+            placeholder={ "Ваш E-mail" }
+            type="email"
+            value={ email }
+            onChange={ (e) => setEmail(e.target.value) }
+          ></input>
+          <button type="submit" className={ styles.submit } onClick={ handleClick }>/ТЫК</button>
+        </form>) : (<h2>Email отправлен: { email }</h2>) }
+
+      <div className={ styles.container }>
         <ul className={ styles.links }>
           <Link className={ `${ styles.link } ${ styles.link_bold }` } href="/">Покупателям</Link>
           <Link className={ styles.link } href="/">Оплата и доставка</Link>

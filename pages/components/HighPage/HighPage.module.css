@@ -1,8 +1,9 @@
-.main {
-  flex-grow: 1;
+.HighPage {
+  position: relative;
+  flex-direction: column;
   display: flex;
 }
-.main__text {
+.HighPage__text {
   font-family: "Gilroy Medium";
   font-weight: 400;
   font-style: normal;
@@ -15,7 +16,7 @@
   color: rgb(192, 71, 40);
   padding: 0 0 35px 0;
 }
-.main__transfer {
+.HighPage__transfer {
   float: right;
   font-family: "Gilroy Medium";
   font-weight: 400;
@@ -26,15 +27,15 @@
   width: 100%;
 }
 @media screen and (max-width: 344px) {
-  .main__transfer {
+  .HighPage__transfer {
     float: left;
     padding: 0;
   }
-  .main__text {
+  .HighPage__text {
     text-align: left;
   }
 }
-.main__image {
+.HighPage__image {
   margin: 0 auto;
   display: flex;
   align-self: center;
@@ -96,4 +97,4 @@
   line-height: 25px;
 }
 
-/*# sourceMappingURL=Main.module.css.map */
+/*# sourceMappingURL=HighPage.module.css.map */

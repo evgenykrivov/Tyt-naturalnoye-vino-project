@@ -1,6 +1,5 @@
 import Head from "next/head"
 import Header from "../Header"
-import Main from "../Main"
 import Footer from "../Footer"
 import WidgetSize from "pages/components/WidgetSize"
 
@@ -22,9 +21,9 @@ const MainLayout = ({ children }) => (<>
 
   <WidgetSize/>
   <Header/>
-  <Main>
+  <main>
     { children }
-  </Main>
+  </main>
   <Footer/>
 </>)
 

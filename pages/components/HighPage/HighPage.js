@@ -1,12 +1,12 @@
-import styles from "./Main.module.scss"
+import styles from "./HighPage.module.scss"
 import Image from "next/image"
-import mainImage from "../../../public/mainImage.png"
+import HighPageImage from "../../../public/mainImage.png"
 import tick from "../../../public/tick.png"
 
-const Main = () => (
-  <main>
-    <h1 className={ styles.main__text }>ТУТ НАТУРАЛЬНОЕ<span className={ styles.main__transfer }>ВИНО</span></h1>
-    <Image className={ styles.main__image } src={ mainImage } alt={ "Main photo" }/>
+const HighPage = () => (
+  <div className={styles.HighPage}>
+    <h1 className={ styles.HighPage__text }>ТУТ НАТУРАЛЬНОЕ<span className={ styles.HighPage__transfer }>ВИНО</span></h1>
+    <Image className={ styles.HighPage__image } src={ HighPageImage } alt={ "HighPage photo" }/>
     <div className={ styles.container }>
       <Image src={ tick } alt={ "Tick" }/>
       <p className={ styles.container__about }>СКРОЛЬ</p>
@@ -31,7 +31,7 @@ const Main = () => (
         </p>
       </div>
     </div>
-  </main>
+  </div>
 )
 
-export default Main
+export default HighPage

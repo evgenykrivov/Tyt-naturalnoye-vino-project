@@ -1,5 +1,6 @@
-.main {
-  flex-grow: 1;
+.HighPage {
+  position: relative;
+  flex-direction: column;
   display: flex;
 
   &__text {
