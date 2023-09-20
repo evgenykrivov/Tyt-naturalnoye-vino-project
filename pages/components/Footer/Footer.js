@@ -8,14 +8,14 @@ import { useState } from "react" // Импортируем useState
 const Footer = () => {
   const [ email, setEmail ] = useState("") // Создаем состояние для хранения значения поля email
   const [ emailStatus, setEmailStatus ] = useState(false)
+  const [ validation, setValidation ] = useState(false)
   const handleClick = (e) => {
     e.preventDefault()
 
     if ( isValidEmail(email) ) {
       setEmailStatus(true)
-      console.log("Email отправлен:", email)
     } else {
-      alert("Пожалуйста, введите действительный E-mail.")
+      setValidation(true)
     }
   }
 
@@ -29,17 +29,20 @@ const Footer = () => {
       <h3 className={ styles.heading }>ПОДПИСЫВАЙСЯ НА НАШИ НОВОСТИ</h3>
 
       { !emailStatus ? (
-        <form className={ styles.follow }>
-          <input
-            pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$"
-            className={ styles.input }
-            placeholder={ "Ваш E-mail" }
-            type="email"
-            value={ email }
-            onChange={ (e) => setEmail(e.target.value) }
-          ></input>
-          <button type="submit" className={ styles.submit } onClick={ handleClick }>/ТЫК</button>
-        </form>) : (<h2>Спасибо за подписку!</h2>) }
+        <>
+          <form className={ styles.follow }>
+            <input
+              pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$"
+              className={ styles.input }
+              placeholder={ "Ваш E-mail" }
+              type="email"
+              value={ email }
+              onChange={ (e) => setEmail(e.target.value) }
+            ></input>
+            <button type="submit" className={ styles.submit } onClick={ handleClick }>/ТЫК</button>
+          </form>
+          { validation ? (<p>Некорретный формат :(</p>) : <></> }
+        </>) : (<p>Спасибо за подписку!</p>) }
 
       <div className={ styles.container }>
         <ul className={ styles.links }>

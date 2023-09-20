@@ -10,15 +10,18 @@
   font-size: 20px;
   line-height: 22px;
   font-family: "Gilroy Light";
+  transition: 0.05s ease-in .05s;
 
   &:hover {
     margin: 0 0 0 20px;
     color: #6BA5A9;
+    transition: 0.05s ease-in .05s;
   }
 
   &_active {
     color: #6BA5A9;
     margin: 0 0 0 20px;
+    transition: 0.05s ease-in .05s;
   }
 }
 

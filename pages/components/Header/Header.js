@@ -12,9 +12,10 @@ const Header = () => {
   return (
     <header>
       <div className={ styles.container }>
-        <Link href={ "/" }> <Image className={ styles.logoImage } onClick={removeScroll} src={ logo } alt="Main logo"/></Link>
+        <Link href={ "/" }> <Image className={ styles.logoImage } onClick={ removeScroll } src={ logo }
+                                   alt="Main logo"/></Link>
       </div>
-      <Menu removeScroll={removeScroll} />
+      <Menu removeScroll={ removeScroll }/>
     </header>
   )
 }

@@ -1,0 +1,18 @@
+.container {
+  overflow: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex: 0 0 100%;
+  flex-shrink: 0;
+  flex-grow: 1;
+
+  &__galary {
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 1;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+  }
+
+}
