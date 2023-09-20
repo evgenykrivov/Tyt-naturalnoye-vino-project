@@ -11,6 +11,7 @@
   line-height: 22px;
   font-family: "Gilroy Light";
   transition: 0.05s ease-in 0.05s;
+  width: max-content;
 }
 .buttonType:hover {
   margin: 0 0 0 20px;
