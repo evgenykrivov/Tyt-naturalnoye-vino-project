@@ -1,0 +1,53 @@
+%extend-font-medium {
+  font-family: 'Gilroy Medium';
+  font-weight: 500;
+  font-style: normal;
+}
+
+%extend-font-regular {
+  font-family: "Gilroy Regular";
+  font-weight: 400;
+  font-style: normal;
+}
+
+%extend-font-light {
+  font-family: "Gilroy Light";
+  font-weight: 300;
+  font-style: normal;
+}
+
+%button-basic {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+%column-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+%link-decoration {
+  text-decoration: none;
+
+  &:active {
+    text-decoration: none;
+  }
+
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:link {
+    text-decoration: none;
+  }
+}
+
+%basic-input {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  outline-offset: 0;
+  border: 0;
+  padding: 0;
+}

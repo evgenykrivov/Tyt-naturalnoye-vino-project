@@ -71,7 +71,7 @@ const wines = [
     rating: 4.1,
     iconDesktop: null,
     iconMobile: null,
-    species: "полу сладкое",
+    species: "полусладкое",
     volume: "0,75 л."
   },
   {
@@ -84,7 +84,7 @@ const wines = [
     rating: 4.0,
     iconDesktop: null,
     iconMobile: null,
-    species: "полу сладкое",
+    species: "полусладкое",
     volume: "0,75 л."
   },
   {
@@ -110,7 +110,7 @@ const wines = [
     rating: 4.3,
     iconDesktop: null,
     iconMobile: null,
-    species: "полу сладкое",
+    species: "полусладкое",
     volume: "0,75 л."
   },
   {
@@ -123,7 +123,7 @@ const wines = [
     rating: 4.5,
     iconDesktop: null,
     iconMobile: null,
-    species: "полу сладкое",
+    species: "полусладкое",
     volume: "0,75 л."
   },
   {
@@ -136,7 +136,7 @@ const wines = [
     rating: 4.2,
     iconDesktop: null,
     iconMobile: null,
-    species: "полу сладкое",
+    species: "полусладкое",
     volume: "0,75 л."
   },
   {
@@ -214,7 +214,7 @@ const wines = [
     rating: 4.2,
     iconDesktop: null,
     iconMobile: null,
-    species: "полу сладкое",
+    species: "полусладкое",
     volume: "0,75 л."
   },
   {
@@ -227,9 +227,9 @@ const wines = [
     rating: 4.7,
     iconDesktop: null,
     iconMobile: null,
-    species: "полу сладкое",
+    species: "полусладкое",
     volume: "0,75 л."
   } ]
 
-const wineType = [ "Красное", "Розовое", "Белое", "Голубое" ]
+const wineType = ["Красное", "Розовое", "Белое", "Голубое" ]
 export { wines, linkName, wineType }

@@ -1,69 +1,55 @@
+@import "../../../styles/index";
+
 
 .heading {
+  @extend %extend-font-medium;
+  @include size-font(20px, 40px);
+  color: $basic-white;
   padding: 75px 0 25px;
   display: flex;
   justify-content: center;
-  font-family: "Gilroy Medium";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 40px;
-  font-style: normal;
-  color: #FCFCFC;
   width: 100%;
 }
 
 .follow {
   display: flex;
-  justify-content: center;
 }
 
 .input {
-  background-color: rgba(0, 0, 0, 0);
-  outline: none;
-  outline-offset: 0;
-  border: 0;
-  color: #FCFCFC;
-  font-family: "Gilroy Medium";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 22px;
-  border-bottom: 1px solid #FCFCFC;
+  @extend %basic-input;
+  @extend %extend-font-medium;
+  @include size-font(16px, 22px);
+  color: $basic-white;
+  border-bottom: 1px solid $basic-white;
   padding: 0 0 10px 0;
   display: block;
-  width: calc(100% - 50px);
+  width: calc(100% - 100px);
   margin: 0 0 0 24px;
 
   &::placeholder {
-    color: #FCFCFC;
-    font-family: "Gilroy Medium";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 22px;
+    color: $basic-white;
+    @extend %extend-font-medium;
+    @include size-font(16px, 22px);
     opacity: 0.6;
 
   }
 }
 
 .submit {
+  @extend %extend-font-medium;
+  @extend %basic-input;
+  @include size-font(16px, 22px);
+  @extend %basic-animation;
   display: flex;
   align-self: flex-end;
-  border-radius: 2px;
-  outline: none;
   box-sizing: border-box;
-  padding: 0;
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
+  color: $basic-white;
   width: 60px;
   margin: 0 0 0 20px;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 22px;
 
   &:hover {
     opacity: 0.4;
+    @extend %basic-animation;
   }
 }
 
@@ -76,33 +62,26 @@
 
 .links {
   gap: 16px;
-  display: flex;
-  flex-direction: column;
+  @extend %column-flex;
 }
 
 .link {
-  outline: none;
-  text-decoration: none;
-  font-family: "Gilroy Regular";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 22px;
+  @extend %link-decoration;
+  @extend %basic-animation;
+  @extend %extend-font-regular;
+  @include size-font(16px, 22px);
 
   &:visited {
-    color: #FCFCFC;
-    text-decoration: none;
+    color: $basic-white;
   }
 
   &:hover {
     opacity: 0.6;
+    @extend %basic-animation;
   }
 }
 
 .link_bold {
-  font-family: "Gilroy Medium";
-  font-weight: 500;
-  font-style: normal;
-  font-size: 18px;
-  line-height: 24px;
+  @extend %extend-font-medium;
+  @include size-font(18px, 24px);
 }

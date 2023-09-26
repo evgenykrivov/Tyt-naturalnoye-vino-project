@@ -1,27 +1,27 @@
+@import "../../../styles/extends";
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
 .burgerMenu {
+  @extend %column-flex;
   position: relative;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
 }
 
 .burgerButton {
-  background: none;
-  border: none;
-  cursor: pointer;
+  @extend %button-basic;
   display: flex;
   justify-content: space-between;
   margin: auto 15px 10px 0;
 }
 
 .menu {
+  @extend %column-flex;
   position: absolute;
   top: calc(100% + 10px);
   right: 0;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
-  padding: 16px 0 0 0 ;
+  padding: 16px 0 0 0;
 }
 
 .imageMenu {
@@ -30,23 +30,22 @@
 }
 
 .link {
+  @extend %extend-font-regular;
+  @include size-font(16px, 22px);
+  @extend %link-decoration;
+  color: $basic-red;
   padding: 16px;
-  text-decoration: none;
-  font-family: "Gilroy Regular";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 22px;
   border-bottom: 1px solid rgba(192, 71, 40, 0.3);
+
   &:visited {
-    color: #C04728;
-    text-decoration: none;
+    color: $basic-red;
   }
+
   &:hover {
     opacity: 0.6;
   }
+
   &:link {
-    color: #C04728;
-    text-decoration: none;
+    color: $basic-red;
   }
 }

@@ -14,7 +14,7 @@ body, h1, h2, h3, p {
 body {
   max-width: 576px;
   margin: 0 auto;
-  background-color: #FCFCFC;
+  background-color: wheat;
 }
 
 .no-scroll {
@@ -28,11 +28,14 @@ body {
   max-width: 1280px;
   min-width: 344px;
   margin: 0 auto;
+  background-color: #FCFCFC;
 }
 
 main {
   flex-grow: 1;
   margin: 120px 0 0 0;
+  background-color: #FCFCFC;
+  padding: 0 0 100px 0;
 }
 
 header {
@@ -43,13 +46,11 @@ header {
   width: 100%;
   max-width: 576px;
   z-index: 10;
-  background-color: rgba(252, 252, 252);
   padding: 0 0 16px 0;
 }
 
 
 footer {
-  margin: 100px 0 0 0;
   background-color: #C04728;
   padding: 0 0 66px 0;
 }

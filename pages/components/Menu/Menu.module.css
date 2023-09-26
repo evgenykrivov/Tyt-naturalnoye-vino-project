@@ -1,14 +1,39 @@
-.burgerMenu {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.link {
+  font-family: "Gilroy Regular";
+  font-weight: 400;
+  font-style: normal;
 }
 
 .burgerButton {
   background: none;
   border: none;
   cursor: pointer;
+}
+
+.menu, .burgerMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  text-decoration: none;
+}
+.link:active {
+  text-decoration: none;
+}
+.link:visited {
+  text-decoration: none;
+}
+.link:link {
+  text-decoration: none;
+}
+
+.burgerMenu {
+  position: relative;
+  justify-content: space-between;
+}
+
+.burgerButton {
   display: flex;
   justify-content: space-between;
   margin: auto 15px 10px 0;
@@ -19,8 +44,6 @@
   top: calc(100% + 10px);
   right: 0;
   background-color: #fff;
-  display: flex;
-  flex-direction: column;
   padding: 16px 0 0 0;
 }
 
@@ -30,25 +53,20 @@
 }
 
 .link {
-  padding: 16px;
-  text-decoration: none;
-  font-family: "Gilroy Regular";
-  font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 22px;
+  color: #C04728;
+  padding: 16px;
   border-bottom: 1px solid rgba(192, 71, 40, 0.3);
 }
 .link:visited {
   color: #C04728;
-  text-decoration: none;
 }
 .link:hover {
   opacity: 0.6;
 }
 .link:link {
   color: #C04728;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=Menu.module.css.map */
