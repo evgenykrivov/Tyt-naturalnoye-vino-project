@@ -1,14 +1,12 @@
+@import "../../../styles/index";
+
 .shop {
+  @extend %column-flex;
   margin: 0 15px;
-  display: flex;
-  flex-direction: column;
 }
 .mainText {
-  font-family: "Gilroy Medium";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 32px;
-  line-height: 27.5px;
-  color: #C04728;
+  @extend %extend-font-medium;
+  @include size-font(32px, 27.5px);
+  color: $basic-red;
   height: max-content;
 }

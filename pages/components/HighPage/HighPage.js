@@ -4,8 +4,9 @@ import HighPageImage from "../../../public/mainImage.png"
 import tick from "../../../public/tick.png"
 
 const HighPage = () => (
-  <div className={styles.HighPage}>
-    <h1 className={ styles.HighPage__text }>ТУТ НАТУРАЛЬНОЕ<span className={ styles.HighPage__transfer }>ВИНО</span></h1>
+  <div className={ styles.HighPage }>
+    <h1 className={ styles.HighPage__text }>ТУТ НАТУРАЛЬНОЕ<span className={ styles.HighPage__transfer }>ВИНО</span>
+    </h1>
     <Image className={ styles.HighPage__image } src={ HighPageImage } alt={ "HighPage photo" }/>
     <div className={ styles.container }>
       <Image src={ tick } alt={ "Tick" }/>
@@ -18,7 +19,7 @@ const HighPage = () => (
         <h2 className={ styles.heading__extension }>НАТУРАЛЬНОЕ <span
           className={ styles.heading__extension_blueColor }>ВИНО</span></h2>
       </div>
-      <div className={styles.about}>
+      <div className={ styles.about }>
         <p>Это вино изготовленное из винограда,
           выращенного на органических землях, без добавления искусственных, химических и
           других посторонних веществ. Такое вино ферментируется само по

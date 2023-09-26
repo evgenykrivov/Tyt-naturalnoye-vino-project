@@ -1,6 +1,4 @@
-@import "../../../styles/extends";
-@import "../../../styles/mixins";
-@import "../../../styles/variables";
+@import "../../../styles/index";
 
 .burgerMenu {
   @extend %column-flex;
@@ -10,9 +8,15 @@
 
 .burgerButton {
   @extend %button-basic;
+  @extend %basic-animation;
   display: flex;
   justify-content: space-between;
   margin: auto 15px 10px 0;
+
+  &:hover {
+    @extend %basic-animation;
+    opacity: 0.6;
+  }
 }
 
 .menu {

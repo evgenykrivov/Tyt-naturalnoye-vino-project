@@ -33,7 +33,7 @@ const Collection = () => {
   }
 
   const circles = Array.from({ length: winesCollection.length < 5 ? winesCollection.length : 5 }, (_, index) => (
-      <div key={ index } >
+      <div key={ index }>
         { currentIndex % 5 === index % 5 ?
           <Image src={ circles_active } alt="circles active"/> :
           <Image src={ circlesImage } alt="circles"/> }

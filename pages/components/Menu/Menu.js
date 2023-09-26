@@ -21,9 +21,9 @@ function Menu (props) {
 
   const toggleMenu = () => {
     if ( isOpen ) {
-      document.body.classList.remove("no-scroll") // Удалить класс для разрешения скроллинга
+      document.body.classList.remove("no-scroll")
     } else {
-      document.body.classList.add("no-scroll") // Добавить класс для запрета скроллинга
+      document.body.classList.add("no-scroll")
     }
     setIsOpen(!isOpen)
   }

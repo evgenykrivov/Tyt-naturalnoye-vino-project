@@ -9,14 +9,10 @@ const Footer = () => {
   const [ email, setEmail ] = useState("") // Создаем состояние для хранения значения поля email
   const [ emailStatus, setEmailStatus ] = useState(false)
   const [ validation, setValidation ] = useState(false)
+
   const handleClick = (e) => {
     e.preventDefault()
-
-    if ( isValidEmail(email) ) {
-      setEmailStatus(true)
-    } else {
-      setValidation(true)
-    }
+    isValidEmail(email) ? setEmailStatus(true) : setValidation(true)
   }
 
   const isValidEmail = (value) => {

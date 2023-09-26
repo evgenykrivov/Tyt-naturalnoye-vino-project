@@ -28,6 +28,10 @@
   text-decoration: none;
 }
 
+.burgerButton:hover, .burgerButton {
+  transition: 0.05s ease-in 0.05s;
+}
+
 .burgerMenu {
   position: relative;
   justify-content: space-between;
@@ -37,6 +41,9 @@
   display: flex;
   justify-content: space-between;
   margin: auto 15px 10px 0;
+}
+.burgerButton:hover {
+  opacity: 0.6;
 }
 
 .menu {

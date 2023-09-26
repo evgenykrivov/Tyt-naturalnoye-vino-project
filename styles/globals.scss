@@ -1,4 +1,5 @@
 @import "./fonts/fonts.css";
+@import "index";
 
 * {
   margin: 0;
@@ -22,19 +23,18 @@ body {
 }
 
 #__next {
-  display: flex;
-  flex-direction: column;
+  @extend %column-flex;
   height: 100vh;
   max-width: 1280px;
   min-width: 344px;
   margin: 0 auto;
-  background-color: #FCFCFC;
+  background-color: $basic-white;
 }
 
 main {
   flex-grow: 1;
   margin: 120px 0 0 0;
-  background-color: #FCFCFC;
+  background-color: $basic-white;
   padding: 0 0 100px 0;
 }
 
@@ -47,11 +47,12 @@ header {
   max-width: 576px;
   z-index: 10;
   padding: 0 0 16px 0;
+  background-color: $basic-white;
 }
 
 
 footer {
-  background-color: #C04728;
+  background-color: $basic-red;
   padding: 0 0 66px 0;
 }
 
