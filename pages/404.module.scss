@@ -3,7 +3,7 @@
 .mainText {
   @extend %extend-font-light;
   @include size-font(32px, 27px);
-  color: $basic-red;
+  color: $color-primary;
   margin: 100px 20px 0 20px;
   flex-grow: 1;
 }

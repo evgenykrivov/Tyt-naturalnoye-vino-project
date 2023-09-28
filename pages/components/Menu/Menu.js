@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import styles from "./Menu.module.scss"
+import S from "./Menu.module.scss"
 import Link from "next/link"
 import burger from "@/public/burget.svg"
 import Image from "next/image"
@@ -34,14 +34,14 @@ function Menu (props) {
   }
 
   return (
-    <div className={ styles.burgerMenu }>
-      <button className={ styles.burgerButton } onClick={ handleMenu }>
+    <div className={ S.burgerMenu }>
+      <button className={ S.burgerButton } onClick={ handleMenu }>
         <Image src={ burger } alt="Burger menu"/>
       </button>
       { isOpen && (
-        <div className={ styles.menu } style={ { width: isWidth, height: isHeight } }>
+        <div className={ S.menu } style={ { width: isWidth, height: isHeight } }>
           { linkName.map(e => (
-            <Link key={ e.name } className={ styles.link } onClick={ props.removeScroll } href={ e.link }>
+            <Link key={ e.name } className={ S.link } onClick={ props.removeScroll } href={ e.link }>
               { e.name }
             </Link>
           )) }

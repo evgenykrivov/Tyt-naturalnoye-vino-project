@@ -4,48 +4,21 @@
   overflow: hidden;
   box-sizing: border-box;
   display: flex;
-  flex: 0 0 100%;
-  flex-shrink: 0;
-  flex-grow: 1;
   margin: 35px 0 0 0;
-
-  &__galary {
-    display: flex;
-    flex-shrink: 0;
-    flex-grow: 1;
-    justify-content: flex-end;
-  }
+  justify-content: space-between;
 }
 
-.switch {
-  margin: 20px 0 0 0;
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-}
-
-.info {
+.item {
   @extend %column-flex;
   @extend %extend-font-light;
   @include size-font(14px, 16px);
   max-width: 135px;
   margin: 0 10px 0 0;
   color: #C04728;
-  justify-content: flex-end;
   gap: 5px;
-
-  &__about {
-    &_bold {
-      @extend %extend-font-medium;
-      @include size-font(15px, 18px);
-    }
-  }
-}
-
-.wineImage {
   display: flex;
-  margin: 0 30px 0 0;
 }
+
 
 .button {
   cursor: pointer;
@@ -56,30 +29,6 @@
   }
 }
 
-.buttonType {
-  @extend %column-flex;
-  @extend %extend-font-light;
-  @include size-font(20px, 22px);
-  @extend %button-basic;
-  @extend %basic-animation;
-  box-sizing: border-box;
-  padding: 0;
-  color: $basic-red;
-  width: max-content;
-
-  &:hover {
-    @extend %basic-animation;
-    color: $basic-blue;
-    margin: 0 0 0 20px;
-  }
-
-  &_active {
-    @extend %basic-animation;
-    color: $basic-blue;
-    margin: 0 0 0 20px;
-
-  }
-}
 
 .containerType {
   @extend %column-flex;

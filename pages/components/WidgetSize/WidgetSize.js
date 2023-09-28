@@ -1,4 +1,4 @@
-import styles from "./WidgetSize.module.scss"
+import S from "./WidgetSize.module.scss"
 import React from "react"
 
 const WidgetSize = () => {
@@ -22,7 +22,7 @@ const WidgetSize = () => {
       return onUnloadHandler
     }, [])
 
-  return <p className={ styles.WidgetSize }>: { width } px</p>
+  return <p className={ S.WidgetSize }>: { width } px</p>
 }
 
 export default WidgetSize

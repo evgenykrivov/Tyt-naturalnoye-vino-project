@@ -28,13 +28,13 @@ body {
   max-width: 1280px;
   min-width: 344px;
   margin: 0 auto;
-  background-color: $basic-white;
+  background-color: $color-secondary;
 }
 
 main {
   flex-grow: 1;
   margin: 120px 0 0 0;
-  background-color: $basic-white;
+  background-color: $color-secondary;
   padding: 0 0 100px 0;
 }
 
@@ -47,12 +47,12 @@ header {
   max-width: 576px;
   z-index: 10;
   padding: 0 0 16px 0;
-  background-color: $basic-white;
+  background-color: $color-secondary;
 }
 
 
 footer {
-  background-color: $basic-red;
+  background-color: $color-primary;
   padding: 0 0 66px 0;
 }
 

@@ -5,25 +5,6 @@
   @extend %column-flex;
   position: relative;
 
-  &__text {
-    @extend %extend-font-medium;
-    @include size-font(45px, 45px);
-    color: $basic-red;
-    margin: 0 auto;
-    max-width: calc(100% - 32px);
-    text-align: right;
-    height: 106px;
-    padding: 0 0 35px 0;
-  }
-
-  &__transfer {
-    @extend %extend-font-medium;
-    @include size-font(43px, 45px);
-    float: right;
-    padding: 0 0 0 12px;
-    width: 100%;
-  }
-
   @media screen and (max-width: 344px) {
     &__transfer {
       float: left;
@@ -33,11 +14,30 @@
       text-align: left;
     }
   }
+}
 
-  &__image {
-    margin: 0 auto;
-    display: flex;
-    align-self: center;
+.image {
+  margin: 0 auto;
+  display: flex;
+  align-self: center;
+}
+
+.name {
+  @extend %extend-font-medium;
+  @include size-font(45px, 45px);
+  color: $color-primary;
+  margin: 0 auto;
+  max-width: calc(100% - 32px);
+  text-align: right;
+  height: 106px;
+  padding: 0 0 35px 0;
+
+  &_transfer {
+    @extend %extend-font-medium;
+    @include size-font(43px, 45px);
+    float: right;
+    padding: 0 0 0 12px;
+    width: 100%;
   }
 }
 
@@ -46,11 +46,11 @@
   max-width: max-content;
   align-self: flex-end;
   margin: 0 15px 0 0;
+}
 
-  &__about {
-    @extend %extend-font-medium;
-    color: $basic-red;
-  }
+.about {
+  @extend %extend-font-medium;
+  color: $color-primary;
 }
 
 .description {
@@ -61,29 +61,30 @@
   @extend %column-flex;
   margin: 0 0 37px;
 
-  &__main {
-    @extend %extend-font-medium;
-    @include size-font(32px, 27.5px);
-    color: $basic-red;
-  }
-
-  &__extension {
-    @extend %extend-font-medium;
-    @include size-font(32px, 27.5px);
-    margin: 7px 0 0 0;
-    align-self: flex-end;
-    color: $basic-red;
-
-    &_blueColor {
-      color: $basic-blue;
-    }
-  }
 }
 
-.about {
+.additionally {
   @extend %column-flex;
   @extend %extend-font-medium;
   @include size-font(16px, 25px);
   gap: 40px;
-  color: $basic-red
+  color: $color-primary
+}
+
+.main {
+  @extend %extend-font-medium;
+  @include size-font(32px, 27.5px);
+  color: $color-primary;
+}
+
+.extension {
+  @extend %extend-font-medium;
+  @include size-font(32px, 27.5px);
+  margin: 7px 0 0 0;
+  align-self: flex-end;
+  color: $color-primary;
+
+  &_blueColor {
+    color: $color-success;
+  }
 }

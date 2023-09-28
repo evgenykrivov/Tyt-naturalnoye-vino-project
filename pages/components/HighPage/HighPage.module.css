@@ -1,33 +1,16 @@
-.about, .heading__extension, .heading__main, .container__about, .HighPage__transfer, .HighPage__text {
+.extension, .main, .additionally, .about, .name_transfer, .name {
   font-family: "Gilroy Medium";
   font-weight: 500;
   font-style: normal;
 }
 
-.about, .heading, .HighPage {
+.additionally, .heading, .HighPage {
   display: flex;
   flex-direction: column;
 }
 
 .HighPage {
   position: relative;
-}
-.HighPage__text {
-  font-size: 45px;
-  line-height: 45px;
-  color: #C04728;
-  margin: 0 auto;
-  max-width: calc(100% - 32px);
-  text-align: right;
-  height: 106px;
-  padding: 0 0 35px 0;
-}
-.HighPage__transfer {
-  font-size: 43px;
-  line-height: 45px;
-  float: right;
-  padding: 0 0 0 12px;
-  width: 100%;
 }
 @media screen and (max-width: 344px) {
   .HighPage__transfer {
@@ -38,10 +21,29 @@
     text-align: left;
   }
 }
-.HighPage__image {
+
+.image {
   margin: 0 auto;
   display: flex;
   align-self: center;
+}
+
+.name {
+  font-size: 45px;
+  line-height: 45px;
+  color: #C04728;
+  margin: 0 auto;
+  max-width: calc(100% - 32px);
+  text-align: right;
+  height: 106px;
+  padding: 0 0 35px 0;
+}
+.name_transfer {
+  font-size: 43px;
+  line-height: 45px;
+  float: right;
+  padding: 0 0 0 12px;
+  width: 100%;
 }
 
 .container {
@@ -50,7 +52,8 @@
   align-self: flex-end;
   margin: 0 15px 0 0;
 }
-.container__about {
+
+.about {
   color: #C04728;
 }
 
@@ -61,27 +64,29 @@
 .heading {
   margin: 0 0 37px;
 }
-.heading__main {
+
+.additionally {
+  font-size: 16px;
+  line-height: 25px;
+  gap: 40px;
+  color: #C04728;
+}
+
+.main {
   font-size: 32px;
   line-height: 27.5px;
   color: #C04728;
 }
-.heading__extension {
+
+.extension {
   font-size: 32px;
   line-height: 27.5px;
   margin: 7px 0 0 0;
   align-self: flex-end;
   color: #C04728;
 }
-.heading__extension_blueColor {
+.extension_blueColor {
   color: #6BA5A9;
-}
-
-.about {
-  font-size: 16px;
-  line-height: 25px;
-  gap: 40px;
-  color: #C04728;
 }
 
 /*# sourceMappingURL=HighPage.module.css.map */

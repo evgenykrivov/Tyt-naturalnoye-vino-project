@@ -7,6 +7,6 @@
 .mainText {
   @extend %extend-font-medium;
   @include size-font(32px, 27.5px);
-  color: $basic-red;
+  color: $color-primary;
   height: max-content;
 }

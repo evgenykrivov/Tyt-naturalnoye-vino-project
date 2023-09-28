@@ -1,70 +1,30 @@
-.info__about_bold {
-  font-family: "Gilroy Medium";
-  font-weight: 500;
-  font-style: normal;
-}
-
-.buttonType, .info {
+.item {
   font-family: "Gilroy Light";
   font-weight: 300;
   font-style: normal;
 }
 
-.buttonType {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.containerType, .buttonType, .info {
+.containerType, .item {
   display: flex;
   flex-direction: column;
-}
-
-.buttonType_active, .buttonType:hover, .buttonType {
-  transition: 0.05s ease-in 0.05s;
 }
 
 .container {
   overflow: hidden;
   box-sizing: border-box;
   display: flex;
-  flex: 0 0 100%;
-  flex-shrink: 0;
-  flex-grow: 1;
   margin: 35px 0 0 0;
-}
-.container__galary {
-  display: flex;
-  flex-shrink: 0;
-  flex-grow: 1;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-.switch {
-  margin: 20px 0 0 0;
-  display: flex;
-  justify-content: center;
-  gap: 5px;
-}
-
-.info {
+.item {
   font-size: 14px;
   line-height: 16px;
   max-width: 135px;
   margin: 0 10px 0 0;
   color: #C04728;
-  justify-content: flex-end;
   gap: 5px;
-}
-.info__about_bold {
-  font-size: 15px;
-  line-height: 18px;
-}
-
-.wineImage {
   display: flex;
-  margin: 0 30px 0 0;
 }
 
 .button {
@@ -73,23 +33,6 @@
 }
 .button:hover {
   opacity: 0.7;
-}
-
-.buttonType {
-  font-size: 20px;
-  line-height: 22px;
-  box-sizing: border-box;
-  padding: 0;
-  color: #C04728;
-  width: max-content;
-}
-.buttonType:hover {
-  color: #6BA5A9;
-  margin: 0 0 0 20px;
-}
-.buttonType_active {
-  color: #6BA5A9;
-  margin: 0 0 0 20px;
 }
 
 .containerType {

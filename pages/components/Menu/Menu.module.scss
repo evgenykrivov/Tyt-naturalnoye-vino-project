@@ -37,12 +37,12 @@
   @extend %extend-font-regular;
   @include size-font(16px, 22px);
   @extend %link-decoration;
-  color: $basic-red;
+  color: $color-primary;
   padding: 16px;
   border-bottom: 1px solid rgba(192, 71, 40, 0.3);
 
   &:visited {
-    color: $basic-red;
+    color: $color-primary;
   }
 
   &:hover {
@@ -50,6 +50,6 @@
   }
 
   &:link {
-    color: $basic-red;
+    color: $color-primary;
   }
 }
