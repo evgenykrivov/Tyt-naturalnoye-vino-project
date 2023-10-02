@@ -1,0 +1,21 @@
+.item {
+  font-family: "Gilroy Light";
+  font-weight: 300;
+  font-style: normal;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  font-size: 14px;
+  line-height: 16px;
+  max-width: 135px;
+  margin: 0 10px 0 0;
+  color: #C04728;
+  gap: 5px;
+}
+
+/*# sourceMappingURL=WineCollectionScene.module.css.map */

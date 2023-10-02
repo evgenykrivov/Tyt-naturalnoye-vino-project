@@ -1,4 +1,4 @@
-.link_bold, .submit, .input::placeholder, .input, .heading {
+.linkBold, .submit, .input::placeholder, .input, .heading {
   font-family: "Gilroy Medium";
   font-weight: 500;
   font-style: normal;
@@ -107,7 +107,8 @@
 .link:hover {
   opacity: 0.6;
 }
-.link_bold {
+
+.linkBold {
   font-size: 18px;
   line-height: 24px;
 }

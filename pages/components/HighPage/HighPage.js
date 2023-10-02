@@ -5,7 +5,7 @@ import tick from "../../../public/tick.png"
 
 const HighPage = () => (
   <div className={ S.HighPage }>
-    <h1 className={ S.name }>ТУТ НАТУРАЛЬНОЕ<span className={ S.name_transfer }>ВИНО</span>
+    <h1 className={ S.name }>ТУТ НАТУРАЛЬНОЕ<span className={ S.nameTransfer }>ВИНО</span>
     </h1>
     <Image className={ S.image } src={ HighPageImage } alt={ "HighPage photo" }/>
     <div className={ S.container }>
@@ -17,7 +17,7 @@ const HighPage = () => (
       <div className={ S.heading }>
         <h2 className={ S.main }>ЧТО ТАКОЕ</h2>
         <h2 className={ S.extension }>НАТУРАЛЬНОЕ <span
-          className={ S.extension_blueColor }>ВИНО</span></h2>
+          className={ S.extensionBlueColor }>ВИНО</span></h2>
       </div>
       <div className={ S.additionally }>
         <p>Это вино изготовленное из винограда,

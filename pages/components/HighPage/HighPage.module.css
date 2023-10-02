@@ -1,4 +1,4 @@
-.extension, .main, .additionally, .about, .name_transfer, .name {
+.extension, .main, .additionally, .about, .nameTransfer, .name {
   font-family: "Gilroy Medium";
   font-weight: 500;
   font-style: normal;
@@ -11,15 +11,6 @@
 
 .HighPage {
   position: relative;
-}
-@media screen and (max-width: 344px) {
-  .HighPage__transfer {
-    float: left;
-    padding: 0;
-  }
-  .HighPage__text {
-    text-align: left;
-  }
 }
 
 .image {
@@ -38,7 +29,8 @@
   height: 106px;
   padding: 0 0 35px 0;
 }
-.name_transfer {
+
+.nameTransfer {
   font-size: 43px;
   line-height: 45px;
   float: right;
@@ -85,7 +77,8 @@
   align-self: flex-end;
   color: #C04728;
 }
-.extension_blueColor {
+
+.extensionBlueColor {
   color: #6BA5A9;
 }
 

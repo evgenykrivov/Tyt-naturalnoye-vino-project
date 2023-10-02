@@ -8,18 +8,6 @@
   justify-content: space-between;
 }
 
-.item {
-  @extend %column-flex;
-  @extend %extend-font-light;
-  @include size-font(14px, 16px);
-  max-width: 135px;
-  margin: 0 10px 0 0;
-  color: #C04728;
-  gap: 5px;
-  display: flex;
-}
-
-
 .button {
   cursor: pointer;
   margin: auto 0;
@@ -28,7 +16,6 @@
     opacity: 0.7;
   }
 }
-
 
 .containerType {
   @extend %column-flex;

@@ -1,4 +1,4 @@
-.about_bold {
+.aboutBold {
   font-family: "Gilroy Medium";
   font-weight: 500;
   font-style: normal;
@@ -32,9 +32,10 @@
   font-size: 14px;
   line-height: 20px;
 }
-.about_bold {
+
+.aboutBold {
   font-size: 16px;
   line-height: 22px;
 }
 
-/*# sourceMappingURL=CollectionItem.module.css.map */
+/*# sourceMappingURL=WineCollectionItem.module.css.map */

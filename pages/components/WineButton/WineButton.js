@@ -6,7 +6,7 @@ const WineButton = (props) => {
   return (
     <button
       className={`${S.buttonType} ${
-        props.activeButton === props.index ? S.buttonType_active : ""
+        props.activeButton === props.index ? S.buttonTypeActive : ""
       }`}
       onClick={() => {
         props.inColor(props.index)

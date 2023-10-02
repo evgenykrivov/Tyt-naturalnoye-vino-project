@@ -4,16 +4,6 @@
 .HighPage {
   @extend %column-flex;
   position: relative;
-
-  @media screen and (max-width: 344px) {
-    &__transfer {
-      float: left;
-      padding: 0;
-    }
-    &__text {
-      text-align: left;
-    }
-  }
 }
 
 .image {
@@ -31,14 +21,14 @@
   text-align: right;
   height: 106px;
   padding: 0 0 35px 0;
+}
 
-  &_transfer {
-    @extend %extend-font-medium;
-    @include size-font(43px, 45px);
-    float: right;
-    padding: 0 0 0 12px;
-    width: 100%;
-  }
+.nameTransfer {
+  @extend %extend-font-medium;
+  @include size-font(43px, 45px);
+  float: right;
+  padding: 0 0 0 12px;
+  width: 100%;
 }
 
 .container {
@@ -83,8 +73,8 @@
   margin: 7px 0 0 0;
   align-self: flex-end;
   color: $color-primary;
+}
 
-  &_blueColor {
-    color: $color-success;
-  }
+.extensionBlueColor {
+  color: $color-success;
 }

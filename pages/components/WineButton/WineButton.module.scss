@@ -1,6 +1,5 @@
 @import "../../../styles/index";
 
-
 .buttonType {
   @extend %column-flex;
   @extend %extend-font-light;
@@ -17,11 +16,10 @@
     color: $color-success;
     margin: 0 0 0 20px;
   }
+}
 
-  &_active {
-    @extend %basic-animation;
-    color: $color-success;
-    margin: 0 0 0 20px;
-
-  }
+.buttonTypeActive {
+  @extend %basic-animation;
+  color: $color-success;
+  margin: 0 0 0 20px;
 }

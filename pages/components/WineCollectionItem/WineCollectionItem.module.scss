@@ -17,9 +17,9 @@
 .about {
   @extend %extend-font-light;
   @include size-font(14px, 20px);
+}
 
-  &_bold {
-    @extend %extend-font-medium;
-    @include size-font(16px, 22px);
-  }
+.aboutBold {
+  @extend %extend-font-medium;
+  @include size-font(16px, 22px);
 }

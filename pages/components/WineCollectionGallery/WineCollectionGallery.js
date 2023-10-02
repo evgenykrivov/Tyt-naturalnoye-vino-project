@@ -1,14 +1,17 @@
-import CollectionItem from "@/pages/components/CollectionItem"
+import WineCollectionItem from "pages/components/WineCollectionItem"
 
-const WineCollectionGallery = ({ collection }) => {
+//This component is not used because it is under development.
+// It is designed for a slider, with the pomor of which you can whistle a collection of wines.
+
+const WineCollectionGallery = ({collection}) => {
 
   return (
     <>
       {collection.map((collectionItem) => (
-        <CollectionItem key={collectionItem.index} item={collectionItem} />
+        <WineCollectionItem key={collectionItem.index} item={collectionItem}/>
       ))}
     </>
-  );
-};
+  )
+}
 
-export default WineCollectionGallery;
+export default WineCollectionGallery

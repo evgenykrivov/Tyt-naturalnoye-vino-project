@@ -1,10 +1,4 @@
-.item {
-  font-family: "Gilroy Light";
-  font-weight: 300;
-  font-style: normal;
-}
-
-.containerType, .item {
+.containerType {
   display: flex;
   flex-direction: column;
 }
@@ -15,16 +9,6 @@
   display: flex;
   margin: 35px 0 0 0;
   justify-content: space-between;
-}
-
-.item {
-  font-size: 14px;
-  line-height: 16px;
-  max-width: 135px;
-  margin: 0 10px 0 0;
-  color: #C04728;
-  gap: 5px;
-  display: flex;
 }
 
 .button {
@@ -39,4 +23,4 @@
   gap: 12px;
 }
 
-/*# sourceMappingURL=Collection.module.css.map */
+/*# sourceMappingURL=WineCollectionBrowser.module.css.map */

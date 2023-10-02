@@ -15,7 +15,7 @@
   flex-direction: column;
 }
 
-.buttonType_active, .buttonType:hover, .buttonType {
+.buttonTypeActive, .buttonType:hover, .buttonType {
   transition: 0.05s ease-in 0.05s;
 }
 
@@ -31,7 +31,8 @@
   color: #6BA5A9;
   margin: 0 0 0 20px;
 }
-.buttonType_active {
+
+.buttonTypeActive {
   color: #6BA5A9;
   margin: 0 0 0 20px;
 }

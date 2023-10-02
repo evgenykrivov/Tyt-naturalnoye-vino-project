@@ -25,7 +25,7 @@ const wines = [
   {
     name: "Pfefferer Sun",
     type: "white",
-    smell: [ "blackberry", "blackberry" ],
+    smell: ["blackberry", "blackberry"],
     classification: "Белое",
     alcohol: 2.5,
     sugar: 16,
@@ -38,7 +38,7 @@ const wines = [
   {
     name: "Merlot Reserve",
     type: "red",
-    smell: [ "cherry", "plum" ],
+    smell: ["cherry", "plum"],
     classification: "Красное",
     alcohol: 14.0,
     sugar: 5,
@@ -51,7 +51,7 @@ const wines = [
   {
     name: "Chardonnay Dream",
     type: "white",
-    smell: [ "apple", "vanilla" ],
+    smell: ["apple", "vanilla"],
     classification: "Белое",
     alcohol: 13.5,
     sugar: 6,
@@ -64,7 +64,7 @@ const wines = [
   {
     name: "Rosé Blush",
     type: "rose",
-    smell: [ "strawberry", "citrus" ],
+    smell: ["strawberry", "citrus"],
     classification: "Розовое",
     alcohol: 12.8,
     sugar: 7,
@@ -77,7 +77,7 @@ const wines = [
   {
     name: "Sapphire Blue",
     type: "blue",
-    smell: [ "blueberry", "lavender" ],
+    smell: ["blueberry", "lavender"],
     classification: "Голубое",
     alcohol: 11.2,
     sugar: 8,
@@ -90,7 +90,7 @@ const wines = [
   {
     name: "Cabernet Sauvignon Classic",
     type: "red",
-    smell: [ "black currant", "tobacco" ],
+    smell: ["black currant", "tobacco"],
     classification: "Красное",
     alcohol: 14.5,
     sugar: 4,
@@ -103,7 +103,7 @@ const wines = [
   {
     name: "Sauvignon Blanc Fresh",
     type: "white",
-    smell: [ "green apple", "herbs" ],
+    smell: ["green apple", "herbs"],
     classification: "Белое",
     alcohol: 13.2,
     sugar: 5,
@@ -116,7 +116,7 @@ const wines = [
   {
     name: "Pink Paradise",
     type: "rose",
-    smell: [ "raspberry", "floral notes" ],
+    smell: ["raspberry", "floral notes"],
     classification: "Розовое",
     alcohol: 12.0,
     sugar: 6,
@@ -129,7 +129,7 @@ const wines = [
   {
     name: "Blueberry Bliss",
     type: "blue",
-    smell: [ "blue raspberry", "cherry pit" ],
+    smell: ["blue raspberry", "cherry pit"],
     classification: "Голубое",
     alcohol: 11.5,
     sugar: 7,
@@ -142,7 +142,7 @@ const wines = [
   {
     name: "Pinot Noir Elegance",
     type: "red",
-    smell: [ "red cherry", "rose" ],
+    smell: ["red cherry", "rose"],
     classification: "Красное",
     alcohol: 14.2,
     sugar: 5,
@@ -155,7 +155,7 @@ const wines = [
   {
     name: "Riesling Harmony",
     type: "white",
-    smell: [ "peach", "honey" ],
+    smell: ["peach", "honey"],
     classification: "Белое",
     alcohol: 12.8,
     sugar: 8,
@@ -168,7 +168,7 @@ const wines = [
   {
     name: "Sunset Rosé",
     type: "rose",
-    smell: [ "orange", "almond" ],
+    smell: ["orange", "almond"],
     classification: "Розовое",
     alcohol: 12.3,
     sugar: 4,
@@ -181,7 +181,7 @@ const wines = [
   {
     name: "Electric Blue",
     type: "blue",
-    smell: [ "eucalyptus", "lime" ],
+    smell: ["eucalyptus", "lime"],
     classification: "Голубое",
     alcohol: 10.5,
     sugar: 6,
@@ -194,7 +194,7 @@ const wines = [
   {
     name: "Malbec Velvet",
     type: "red",
-    smell: [ "black cherry", "chocolate" ],
+    smell: ["black cherry", "chocolate"],
     classification: "Красное",
     alcohol: 13.9,
     sugar: 5,
@@ -207,7 +207,7 @@ const wines = [
   {
     name: "Sémillon Sunshine",
     type: "white",
-    smell: [ "pear", "lemon" ],
+    smell: ["pear", "lemon"],
     classification: "Белое",
     alcohol: 11.6,
     sugar: 7,
@@ -220,7 +220,7 @@ const wines = [
   {
     name: "Blush Blossom",
     type: "rose",
-    smell: [ "pomegranate", "rose petals" ],
+    smell: ["pomegranate", "rose petals"],
     classification: "Розовое",
     alcohol: 12.1,
     sugar: 5,
@@ -229,7 +229,9 @@ const wines = [
     iconMobile: null,
     species: "полусладкое",
     volume: "0,75 л."
-  } ]
+  }]
 
-const wineTypes = ["Красное", "Розовое", "Белое", "Голубое" ]
-export { wines, linkName, wineTypes }
+const EMAIL_REGEXP = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
+
+const wineTypes = ["Красное", "Розовое", "Белое", "Голубое"]
+export {wines, linkName, wineTypes, EMAIL_REGEXP}

@@ -1,5 +1,5 @@
 import S from "./Shop.module.scss"
-import Collection from "@/pages/components/Collection"
+import WineCollectionBrowser from "pages/components/WineCollectionBrowser"
 
 
 const Shop = () => {
@@ -7,7 +7,7 @@ const Shop = () => {
     <>
       <div className={ S.shop }>
         <h1 className={ S.mainText } style={ { marginBottom: "22px" } }>КОЛЛЕКЦИЯ</h1>
-        <Collection/>
+        <WineCollectionBrowser/>
       </div>
     </>
   )

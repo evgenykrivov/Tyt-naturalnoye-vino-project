@@ -1,0 +1,11 @@
+@import "../../../styles/index";
+
+.item {
+  @extend %column-flex;
+  @extend %extend-font-light;
+  @include size-font(14px, 16px);
+  max-width: 135px;
+  margin: 0 10px 0 0;
+  color: #C04728;
+  gap: 5px;
+}

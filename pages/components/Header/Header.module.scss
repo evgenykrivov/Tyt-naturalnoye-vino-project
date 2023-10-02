@@ -6,7 +6,6 @@
   color: $color-secondary;
   cursor: pointer;
 
-
   &:hover {
     @extend %basic-animation;
     opacity: 0.6;
