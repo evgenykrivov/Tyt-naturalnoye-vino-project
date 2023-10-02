@@ -231,5 +231,5 @@ const wines = [
     volume: "0,75 л."
   } ]
 
-const wineType = ["Красное", "Розовое", "Белое", "Голубое" ]
-export { wines, linkName, wineType }
+const wineTypes = ["Красное", "Розовое", "Белое", "Голубое" ]
+export { wines, linkName, wineTypes }
