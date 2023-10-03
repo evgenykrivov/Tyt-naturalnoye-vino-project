@@ -229,7 +229,8 @@ const wines = [
     iconMobile: null,
     species: "полусладкое",
     volume: "0,75 л."
-  }]
+  }
+]
 
 const EMAIL_REGEXP = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
 

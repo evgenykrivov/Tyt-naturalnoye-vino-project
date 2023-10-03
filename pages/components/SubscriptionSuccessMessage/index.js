@@ -1,1 +1,1 @@
-export { default } from "./SubscriptionSuccessMessage"
+export {default} from "./SubscriptionSuccessMessage"

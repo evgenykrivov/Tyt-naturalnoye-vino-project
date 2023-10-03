@@ -1,4 +1,8 @@
-.linkBold, .submit, .input::placeholder, .input, .heading {
+.linkBold,
+.submit,
+.input::placeholder,
+.input,
+.heading {
   font-family: "Gilroy Medium";
   font-weight: 500;
   font-style: normal;
@@ -28,7 +32,8 @@
   text-decoration: none;
 }
 
-.submit, .input {
+.submit,
+.input {
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
   outline: none;
@@ -37,14 +42,17 @@
   padding: 0;
 }
 
-.link:hover, .link, .submit:hover, .submit {
+.link:hover,
+.link,
+.submit:hover,
+.submit {
   transition: 0.05s ease-in 0.05s;
 }
 
 .heading {
   font-size: 20px;
   line-height: 40px;
-  color: #FCFCFC;
+  color: #fcfcfc;
   padding: 75px 0 25px;
   display: flex;
   justify-content: center;
@@ -58,15 +66,15 @@
 .input {
   font-size: 16px;
   line-height: 22px;
-  color: #FCFCFC;
-  border-bottom: 1px solid #FCFCFC;
+  color: #fcfcfc;
+  border-bottom: 1px solid #fcfcfc;
   padding: 0 0 10px 0;
   display: block;
   width: calc(100% - 100px);
   margin: 0 0 0 24px;
 }
 .input::placeholder {
-  color: #FCFCFC;
+  color: #fcfcfc;
   font-size: 16px;
   line-height: 22px;
   opacity: 0.6;
@@ -78,7 +86,7 @@
   display: flex;
   align-self: flex-end;
   box-sizing: border-box;
-  color: #FCFCFC;
+  color: #fcfcfc;
   width: 60px;
   margin: 0 0 0 20px;
 }
@@ -102,7 +110,7 @@
   line-height: 22px;
 }
 .link:visited {
-  color: #FCFCFC;
+  color: #fcfcfc;
 }
 .link:hover {
   opacity: 0.6;

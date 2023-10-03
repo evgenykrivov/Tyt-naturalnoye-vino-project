@@ -1,10 +1,11 @@
-.logoImage:hover, .logoImage {
+.logoImage:hover,
+.logoImage {
   transition: 0.05s ease-in 0.05s;
 }
 
 .logoImage {
   margin: 24px 0 0 16px;
-  color: #FCFCFC;
+  color: #fcfcfc;
   cursor: pointer;
 }
 .logoImage:hover {

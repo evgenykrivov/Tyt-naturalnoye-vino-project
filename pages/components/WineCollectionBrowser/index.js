@@ -1,1 +1,1 @@
-export { default } from "./WineCollectionBrowser"
+export {default} from "./WineCollectionBrowser"

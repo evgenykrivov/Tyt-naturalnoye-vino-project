@@ -4,7 +4,7 @@ import Shop from "pages/components/Shop"
 const index = () => (
   <>
     <MainLayout>
-      <Shop/>
+      <Shop />
     </MainLayout>
   </>
 )

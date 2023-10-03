@@ -2,7 +2,7 @@
 
 ## About
 
-The "WineShop" project is a web application for wine sales that provides a unique experience for choosing 
+The "WineShop" project is a web application for wine sales that provides a unique experience for choosing
 and purchasing the finest wines.
 It is developed using cutting-edge technologies such as Next.js, Docker, Yarn, React, and SCSS.
 
@@ -23,11 +23,13 @@ This app is based on a template - https://github.com/evgenytryzo/Layout-App
 - Users can view images of wines, their names, and brief descriptions, helping them make informed purchase decisions.
 
 ![sorting.gif](public%2Fsorting.gif)
+
 ### 3. Newsletter Subscription
 
 - Users have the option to subscribe to newsletters and updates to stay informed about the latest events and offers from WineShop.
 
 ![email.gif](public%2Femail.gif)
+
 ## Start
 
 - ### First, copy the repository:
@@ -41,6 +43,7 @@ git clone git@github.com:evgenytryzo/Tyt-naturalnoye-vino-project.git
 ```
 yarn install
 ```
+
 - ### Then run the command on the command line:
 
 ```
@@ -50,6 +53,7 @@ docker compose up
 With this command, you will launch the container with the application.
 
 For installing all dependencies type `yarn`
+
 > If you get some error delete `.node_modules` and try again **or** create an issue about that
 
 - ### Open a browser window and navigate to a local host with port 4000:
@@ -57,6 +61,7 @@ For installing all dependencies type `yarn`
 ```
 http://localhost:4000/
 ```
+
 ## Documentation:
 
 #### To change the port, you should change the port in the 'package.json' file:
@@ -79,7 +84,7 @@ http://localhost:4000/
 
 ## Technologies:
 
-- **Next.js:**  Next.js provides fast and scalable web application development with React. It offers server-side rendering, performance optimization, and routing.
+- **Next.js:** Next.js provides fast and scalable web application development with React. It offers server-side rendering, performance optimization, and routing.
 
 - **Docker:** Docker is used for containerizing the application, making it portable and manageable while providing an isolated environment.
 
@@ -99,6 +104,5 @@ http://localhost:4000/
 
 We welcome contributions and improvements from the community. If you have ideas, suggestions, or want
 to report a bug, please create an Issue or Pull Request on GitHub.
-
 
 #### Interesting ideas and comments on the project are accepted for the kidney: g0022@inbox.ru

@@ -1,10 +1,17 @@
-.extension, .main, .additionally, .about, .nameTransfer, .name {
+.extension,
+.main,
+.additionally,
+.about,
+.nameTransfer,
+.name {
   font-family: "Gilroy Medium";
   font-weight: 500;
   font-style: normal;
 }
 
-.additionally, .heading, .HighPage {
+.additionally,
+.heading,
+.HighPage {
   display: flex;
   flex-direction: column;
 }
@@ -22,7 +29,7 @@
 .name {
   font-size: 45px;
   line-height: 45px;
-  color: #C04728;
+  color: #c04728;
   margin: 0 auto;
   max-width: calc(100% - 32px);
   text-align: right;
@@ -46,7 +53,7 @@
 }
 
 .about {
-  color: #C04728;
+  color: #c04728;
 }
 
 .description {
@@ -61,13 +68,13 @@
   font-size: 16px;
   line-height: 25px;
   gap: 40px;
-  color: #C04728;
+  color: #c04728;
 }
 
 .main {
   font-size: 32px;
   line-height: 27.5px;
-  color: #C04728;
+  color: #c04728;
 }
 
 .extension {
@@ -75,11 +82,11 @@
   line-height: 27.5px;
   margin: 7px 0 0 0;
   align-self: flex-end;
-  color: #C04728;
+  color: #c04728;
 }
 
 .extensionBlueColor {
-  color: #6BA5A9;
+  color: #6ba5a9;
 }
 
 /*# sourceMappingURL=HighPage.module.css.map */

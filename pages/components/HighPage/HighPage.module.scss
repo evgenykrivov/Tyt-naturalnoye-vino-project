@@ -1,6 +1,5 @@
 @import "../../../styles/index";
 
-
 .HighPage {
   @extend %column-flex;
   position: relative;
@@ -50,7 +49,6 @@
 .heading {
   @extend %column-flex;
   margin: 0 0 37px;
-
 }
 
 .additionally {
@@ -58,7 +56,7 @@
   @extend %extend-font-medium;
   @include size-font(16px, 25px);
   gap: 40px;
-  color: $color-primary
+  color: $color-primary;
 }
 
 .main {

@@ -1,6 +1,5 @@
 @import "../../../styles/index";
 
-
 .heading {
   @extend %extend-font-medium;
   @include size-font(20px, 40px);
@@ -31,7 +30,6 @@
     @extend %extend-font-medium;
     @include size-font(16px, 22px);
     opacity: 0.6;
-
   }
 }
 

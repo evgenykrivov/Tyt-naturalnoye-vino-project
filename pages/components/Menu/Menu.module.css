@@ -10,7 +10,8 @@
   cursor: pointer;
 }
 
-.menu, .burgerMenu {
+.menu,
+.burgerMenu {
   display: flex;
   flex-direction: column;
 }
@@ -28,7 +29,8 @@
   text-decoration: none;
 }
 
-.burgerButton:hover, .burgerButton {
+.burgerButton:hover,
+.burgerButton {
   transition: 0.05s ease-in 0.05s;
 }
 
@@ -62,18 +64,18 @@
 .link {
   font-size: 16px;
   line-height: 22px;
-  color: #C04728;
+  color: #c04728;
   padding: 16px;
   border-bottom: 1px solid rgba(192, 71, 40, 0.3);
 }
 .link:visited {
-  color: #C04728;
+  color: #c04728;
 }
 .link:hover {
   opacity: 0.6;
 }
 .link:link {
-  color: #C04728;
+  color: #c04728;
 }
 
 /*# sourceMappingURL=Menu.module.css.map */

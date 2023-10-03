@@ -1,1 +1,1 @@
-export { default } from "./WineCollectionItem"
+export {default} from "./WineCollectionItem"

@@ -15,7 +15,9 @@
   flex-direction: column;
 }
 
-.buttonTypeActive, .buttonType:hover, .buttonType {
+.buttonTypeActive,
+.buttonType:hover,
+.buttonType {
   transition: 0.05s ease-in 0.05s;
 }
 
@@ -24,16 +26,16 @@
   line-height: 22px;
   box-sizing: border-box;
   padding: 0;
-  color: #C04728;
+  color: #c04728;
   width: max-content;
 }
 .buttonType:hover {
-  color: #6BA5A9;
+  color: #6ba5a9;
   margin: 0 0 0 20px;
 }
 
 .buttonTypeActive {
-  color: #6BA5A9;
+  color: #6ba5a9;
   margin: 0 0 0 20px;
 }
 

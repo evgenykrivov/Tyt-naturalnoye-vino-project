@@ -4,9 +4,12 @@ import Footer from "@/pages/components/Footer"
 
 const Custom404 = () => (
   <>
-    <Header/>
-    <h1 className={S.mainText}> Прости, извини, но такой страницы не существует :(</h1>
-    <Footer/>
+    <Header />
+    <h1 className={S.mainText}>
+      {" "}
+      Прости, извини, но такой страницы не существует :(
+    </h1>
+    <Footer />
   </>
 )
 

@@ -11,14 +11,20 @@ const Header = () => {
 
   return (
     <header>
-      <div className={ S.container }>
-        <Link href={ "/" }> <Image className={ S.logoImage } onClick={ removeScroll } src={ logo }
-                                   alt="Main logo"/></Link>
+      <div className={S.container}>
+        <Link href={"/"}>
+          {" "}
+          <Image
+            className={S.logoImage}
+            onClick={removeScroll}
+            src={logo}
+            alt="Main logo"
+          />
+        </Link>
       </div>
-      <Menu removeScroll={ removeScroll }/>
+      <Menu removeScroll={removeScroll} />
     </header>
   )
 }
-
 
 export default Header

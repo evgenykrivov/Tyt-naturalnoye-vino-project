@@ -18,53 +18,70 @@ const Footer = () => {
     setValidation(true)
   }
 
-  const handleClick = (e) => {
+  const handleClick = e => {
     e.preventDefault()
     isValidEmail(email) ? submitEmail() : showEmailValidationError()
   }
 
-  const isValidEmail = (value) => {
+  const isValidEmail = value => {
     EMAIL_REGEXP.test(value) ? setValidation(false) : setValidation(true)
     return EMAIL_REGEXP.test(value)
   }
-
 
   return (
     <footer>
       <h3 className={S.heading}>ПОДПИСЫВАЙСЯ НА НАШИ НОВОСТИ</h3>
 
-      {!emailStatus ? <>
-        <form className={S.follow}>
-          <input
-            pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$"
-            className={S.input}
-            placeholder={"Ваш E-mail"}
-            type="email"
-            value={email}
-            onChange={(e) => {
-              if ( validation ) isValidEmail(e.target.value)
-              if ( e.target.value === "" ) setValidation(false)
-              setEmail(e.target.value)
-            }}
-
-          ></input>
-          <button type="submit" className={S.submit} onClick={handleClick}>/ТЫК</button>
-        </form>
-        <EmailValidationMessage validation={validation}/>
-      </> : <SubscriptionSuccessMessage/>}
+      {!emailStatus ? (
+        <>
+          <form className={S.follow}>
+            <input
+              pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$"
+              className={S.input}
+              placeholder={"Ваш E-mail"}
+              type="email"
+              value={email}
+              onChange={e => {
+                if (validation) isValidEmail(e.target.value)
+                if (e.target.value === "") setValidation(false)
+                setEmail(e.target.value)
+              }}></input>
+            <button type="submit" className={S.submit} onClick={handleClick}>
+              /ТЫК
+            </button>
+          </form>
+          <EmailValidationMessage validation={validation} />
+        </>
+      ) : (
+        <SubscriptionSuccessMessage />
+      )}
 
       <div className={S.container}>
         <ul className={S.links}>
-          <Link className={`${S.link} ${S.linkBold}`} href="/">Покупателям</Link>
-          <Link className={S.link} href="/">Оплата и доставка</Link>
-          <Link className={S.link} href="/">Обратная связь</Link>
-          <Link className={S.link} href="/">Контакты</Link>
+          <Link className={`${S.link} ${S.linkBold}`} href="/">
+            Покупателям
+          </Link>
+          <Link className={S.link} href="/">
+            Оплата и доставка
+          </Link>
+          <Link className={S.link} href="/">
+            Обратная связь
+          </Link>
+          <Link className={S.link} href="/">
+            Контакты
+          </Link>
         </ul>
 
         <ul className={S.links}>
-          <Link className={`${S.link} ${S.linkBold}`} href="/">О нас</Link>
-          <Link className={S.link} href="/">Новости</Link>
-          <Link className={S.link} href="/">Мероприятия</Link>
+          <Link className={`${S.link} ${S.linkBold}`} href="/">
+            О нас
+          </Link>
+          <Link className={S.link} href="/">
+            Новости
+          </Link>
+          <Link className={S.link} href="/">
+            Мероприятия
+          </Link>
         </ul>
       </div>
     </footer>

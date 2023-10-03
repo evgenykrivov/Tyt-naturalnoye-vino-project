@@ -5,8 +5,11 @@ import React from "react"
 
 const WineCollectionScene = ({collection, currentIndex}) => (
   <div className={S.item}>
-    <WineCollectionItem item={collection[ currentIndex ]}/>
-    <WineCollectionCircles collection={collection} currentIndex={currentIndex}/>
+    <WineCollectionItem item={collection[currentIndex]} />
+    <WineCollectionCircles
+      collection={collection}
+      currentIndex={currentIndex}
+    />
   </div>
 )
 

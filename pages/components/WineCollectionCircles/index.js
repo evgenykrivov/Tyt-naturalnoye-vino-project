@@ -1,1 +1,1 @@
-export { default } from "./WineCollectionCircles"
+export {default} from "./WineCollectionCircles"

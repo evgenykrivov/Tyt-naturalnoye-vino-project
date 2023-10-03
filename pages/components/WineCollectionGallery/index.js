@@ -1,1 +1,1 @@
-export { default } from "/pages/components/WineCollectionGallery/WineCollectionGallery"
+export {default} from "/pages/components/WineCollectionGallery/WineCollectionGallery"

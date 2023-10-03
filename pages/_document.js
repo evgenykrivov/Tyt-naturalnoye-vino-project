@@ -1,10 +1,10 @@
-import { Html, Head, Main, NextScript } from "next/document"
+import {Html, Head, Main, NextScript} from "next/document"
 
 const MyDocument = () => (
   <Html>
-    <Head/>
-    <Main/>
-    <NextScript/>
+    <Head />
+    <Main />
+    <NextScript />
   </Html>
 )
 

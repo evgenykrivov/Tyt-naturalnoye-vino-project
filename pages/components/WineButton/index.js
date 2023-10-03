@@ -1,1 +1,1 @@
-export { default } from "./WineButton"
+export {default} from "./WineButton"

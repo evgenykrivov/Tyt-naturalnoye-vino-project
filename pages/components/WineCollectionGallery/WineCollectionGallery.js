@@ -6,8 +6,8 @@ import WineCollectionItem from "pages/components/WineCollectionItem"
 const WineCollectionGallery = ({collection}) => {
   return (
     <>
-      {collection.map((collectionItem) => (
-        <WineCollectionItem key={collectionItem.index} item={collectionItem}/>
+      {collection.map(collectionItem => (
+        <WineCollectionItem key={collectionItem.index} item={collectionItem} />
       ))}
     </>
   )

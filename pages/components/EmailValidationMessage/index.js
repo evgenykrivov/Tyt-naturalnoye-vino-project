@@ -1,1 +1,1 @@
-export { default } from "./EmailValidationMessage"
+export {default} from "./EmailValidationMessage"
