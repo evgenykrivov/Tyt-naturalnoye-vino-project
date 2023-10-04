@@ -96,6 +96,7 @@ http://localhost:4000/
 
 ## Tasks for this project:
 
+- Add to the esBuild project
 - Create a 'sh' file to automatically configure dependencies in the project.
 - Change the 'export' and 'import' in the components for convenient work with them.
 - Install 'Babel'.

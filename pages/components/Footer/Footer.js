@@ -3,7 +3,7 @@ import Link from "next/link"
 import {useState} from "react"
 import EmailValidationMessage from "@/pages/components/EmailValidationMessage"
 import SubscriptionSuccessMessage from "@/pages/components/SubscriptionSuccessMessage"
-import {EMAIL_REGEXP} from "@/pages/utils/varibles"
+import {EMAIL_REGEXP, EMAIL_PATTERN} from "@/utils/varibles"
 
 const Footer = () => {
   const [email, setEmail] = useState("")
@@ -24,7 +24,8 @@ const Footer = () => {
   }
 
   const isValidEmail = value => {
-    EMAIL_REGEXP.test(value) ? setValidation(false) : setValidation(true)
+    const isValidEmail = EMAIL_REGEXP.test(value)
+    setValidation(isValidEmail)
     return EMAIL_REGEXP.test(value)
   }
 
@@ -36,7 +37,7 @@ const Footer = () => {
         <>
           <form className={S.follow}>
             <input
-              pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$"
+              pattern={EMAIL_PATTERN}
               className={S.input}
               placeholder={"Ваш E-mail"}
               type="email"

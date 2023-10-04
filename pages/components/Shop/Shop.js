@@ -5,9 +5,7 @@ const Shop = () => {
   return (
     <>
       <div className={S.shop}>
-        <h1 className={S.mainText} style={{marginBottom: "22px"}}>
-          КОЛЛЕКЦИЯ
-        </h1>
+        <h1 className={S.mainText}>КОЛЛЕКЦИЯ</h1>
         <WineCollectionBrowser />
       </div>
     </>

@@ -3,12 +3,12 @@ import S from "./Menu.module.scss"
 import Link from "next/link"
 import burger from "@/public/burget.svg"
 import Image from "next/image"
-import {linkName} from "@/pages/utils/varibles"
+import {linkName} from "@/utils/varibles"
 
 //to do:
 // If width > 756px then hide menu
 
-function Menu(props) {
+function Menu({removeScroll}) {
   const [isOpen, setIsOpen] = useState(false)
   const [isWidth, setWidth] = useState(0)
   const [isHeight, setHeight] = useState(0)
@@ -19,11 +19,10 @@ function Menu(props) {
   }
 
   const toggleMenu = () => {
-    if (isOpen) {
-      document.body.classList.remove("no-scroll")
-    } else {
-      document.body.classList.add("no-scroll")
-    }
+    const list = document.body.classList
+    const NO_SCROLL_CLASS = "no-scroll"
+
+    isOpen ? list.remove(NO_SCROLL_CLASS) : list.add(NO_SCROLL_CLASS)
     setIsOpen(!isOpen)
   }
 
@@ -43,7 +42,7 @@ function Menu(props) {
             <Link
               key={e.name}
               className={S.link}
-              onClick={props.removeScroll}
+              onClick={removeScroll}
               href={e.link}>
               {e.name}
             </Link>

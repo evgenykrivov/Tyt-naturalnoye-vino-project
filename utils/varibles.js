@@ -234,5 +234,7 @@ const wines = [
 
 const EMAIL_REGEXP = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i
 
+const EMAIL_PATTERN = "^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,}$"
+
 const wineTypes = ["Красное", "Розовое", "Белое", "Голубое"]
-export {wines, linkName, wineTypes, EMAIL_REGEXP}
+export {wines, linkName, wineTypes, EMAIL_REGEXP, EMAIL_PATTERN}

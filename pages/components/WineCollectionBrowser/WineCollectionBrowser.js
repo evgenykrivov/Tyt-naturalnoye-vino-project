@@ -3,7 +3,7 @@ import React, {useState} from "react"
 import Image from "next/image"
 import prevItemImage from "../../../public/prevItem.png"
 import nextItemImage from "../../../public/nextItem.png"
-import {wines, wineTypes} from "@/pages/utils/varibles"
+import {wines, wineTypes} from "@/utils/varibles"
 import WineButton from "@/pages/components/WineButton"
 import WineCollectionScene from "@/pages/components/WineCollectionScene"
 

@@ -4,9 +4,11 @@
   @extend %column-flex;
   margin: 0 15px;
 }
+
 .mainText {
   @extend %extend-font-medium;
   @include size-font(32px, 27.5px);
   color: $color-primary;
   height: max-content;
+  margin: 0 0 22px 0;
 }
