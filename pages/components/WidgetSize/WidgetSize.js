@@ -1,25 +1,27 @@
 import S from "./WidgetSize.module.scss"
-import React from "react"
+import React, {useEffect, useState} from "react"
 
 const WidgetSize = () => {
-  const [width, setWidth] = React.useState(0)
+  const [width, setWidth] = useState(0)
 
-  const handleResize = () => {
-    setWidth(window.innerWidth)
-  }
+  useEffect(() => {
+    const handleResize = () => {
+      const widthBody = document.body.offsetWidth
+      setWidth(widthBody)
+    }
 
-  const onLoadHandler = () => {
-    window.addEventListener("resize", handleResize)
-  }
+    const handleLoad = () => {
+      window.addEventListener("resize", handleResize)
+    }
 
-  const onUnloadHandler = () => {
-    window.removeEventListener("resize", handleResize)
-  }
+    const handleUnload = () => {
+      window.removeEventListener("resize", handleResize)
+    }
 
-  React.useEffect(() => {
     handleResize()
-    onLoadHandler()
-    return onUnloadHandler
+    handleLoad()
+
+    return handleUnload
   }, [])
 
   return <p className={S.WidgetSize}>: {width} px</p>

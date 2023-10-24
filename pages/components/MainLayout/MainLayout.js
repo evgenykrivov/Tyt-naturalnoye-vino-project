@@ -11,20 +11,13 @@ const MainLayout = ({children}) => (
         name="viewport"
         content="width=device-width, initial-scale=1.0"></meta>
 
-      <title>Тут вкусное вино</title>
+      <title>Тут натуральное вино</title>
 
       <meta name="description" content="Next project"></meta>
       <meta
         name="keywords"
         content="html, css, javascript< Next, NextJS"></meta>
       <meta name="author" content="Evgeny Tryzo"></meta>
-
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-        rel="stylesheet"
-      />
     </Head>
 
     <WidgetSize />

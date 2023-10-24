@@ -1,6 +1,5 @@
 import React from "react"
 import S from "./WineButton.module.scss"
-import {clsx} from "clsx"
 
 const WineButton = props => {
   const {activeButton, index, inColor, event, handleSort, children} = props
@@ -8,7 +7,7 @@ const WineButton = props => {
 
   return (
     <button
-      className={`${S.buttonType} ${clsx(isActive && S.buttonTypeActive)}`}
+      className={`${S.buttonType} ${isActive && S.buttonTypeActive}`}
       onClick={() => {
         inColor(index)
         handleSort(event)

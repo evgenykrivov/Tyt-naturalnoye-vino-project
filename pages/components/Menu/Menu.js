@@ -3,7 +3,7 @@ import S from "./Menu.module.scss"
 import Link from "next/link"
 import burger from "@/public/burget.svg"
 import Image from "next/image"
-import {linkName} from "@/utils/varibles"
+import {linkName} from "@/utils/variables"
 
 //to do:
 // If width > 756px then hide menu

@@ -3,23 +3,19 @@ import Link from "next/link"
 import {useState} from "react"
 import EmailValidationMessage from "@/pages/components/EmailValidationMessage"
 import SubscriptionSuccessMessage from "@/pages/components/SubscriptionSuccessMessage"
-import {EMAIL_REGEXP, EMAIL_PATTERN} from "@/utils/varibles"
+import {EMAIL_REGEXP, EMAIL_PATTERN} from "@/utils/variables"
 
 const Footer = () => {
   const [email, setEmail] = useState("")
   const [emailStatus, setEmailStatus] = useState(false)
   const [validation, setValidation] = useState(false)
 
-  const submitEmail = () => {
-    setEmailStatus(true)
-  }
+  const submitEmail = () => setEmailStatus(true)
 
-  const showEmailValidationError = () => {
-    setValidation(true)
-  }
+  const showEmailValidationError = () => setValidation(true)
 
-  const handleClick = e => {
-    e.preventDefault()
+  function handleClick(event) {
+    event.preventDefault()
     isValidEmail(email) ? submitEmail() : showEmailValidationError()
   }
 

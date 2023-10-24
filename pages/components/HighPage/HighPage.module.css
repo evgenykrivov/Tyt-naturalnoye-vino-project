@@ -47,6 +47,7 @@
 
 .container {
   display: flex;
+  max-width: -moz-max-content;
   max-width: max-content;
   align-self: flex-end;
   margin: 0 15px 0 0;
@@ -87,6 +88,4 @@
 
 .extensionBlueColor {
   color: #6ba5a9;
-}
-
-/*# sourceMappingURL=HighPage.module.css.map */
+} /*# sourceMappingURL=HighPage.module.css.map */

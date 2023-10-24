@@ -3,12 +3,10 @@ import WineCollectionBrowser from "pages/components/WineCollectionBrowser"
 
 const Shop = () => {
   return (
-    <>
-      <div className={S.shop}>
-        <h1 className={S.mainText}>КОЛЛЕКЦИЯ</h1>
-        <WineCollectionBrowser />
-      </div>
-    </>
+    <div className={S.shop}>
+      <h1 className={S.mainText}>КОЛЛЕКЦИЯ</h1>
+      <WineCollectionBrowser />
+    </div>
   )
 }
 

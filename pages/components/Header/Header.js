@@ -5,15 +5,12 @@ import Menu from "@/pages/components/Menu"
 import Link from "next/link"
 
 const Header = () => {
-  const removeScroll = () => {
-    document.body.classList.remove("no-scroll")
-  }
+  const removeScroll = () => document.body.classList.remove("no-scroll")
 
   return (
     <header>
       <div className={S.container}>
         <Link href={"/"}>
-          {" "}
           <Image
             className={S.logoImage}
             onClick={removeScroll}

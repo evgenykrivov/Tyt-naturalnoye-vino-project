@@ -27,6 +27,7 @@
   box-sizing: border-box;
   padding: 0;
   color: #c04728;
+  width: -moz-max-content;
   width: max-content;
 }
 .buttonType:hover {
@@ -37,6 +38,4 @@
 .buttonTypeActive {
   color: #6ba5a9;
   margin: 0 0 0 20px;
-}
-
-/*# sourceMappingURL=WineButton.module.css.map */
+} /*# sourceMappingURL=WineButton.module.css.map */

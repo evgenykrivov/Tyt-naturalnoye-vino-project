@@ -6,7 +6,6 @@ const Custom404 = () => (
   <>
     <Header />
     <h1 className={S.mainText}>
-      {" "}
       Прости, извини, но такой страницы не существует :(
     </h1>
     <Footer />
