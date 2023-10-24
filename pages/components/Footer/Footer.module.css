@@ -1,63 +1,106 @@
+.input::-moz-placeholder {
+  font-family: "Gilroy Medium";
+  font-weight: 500;
+  font-style: normal;
+}
+
+.linkBold,
+.submit,
+.input::placeholder,
+.input,
 .heading {
+  font-family: "Gilroy Medium";
+  font-weight: 500;
+  font-style: normal;
+}
+
+.link {
+  font-family: "Gilroy Regular";
+  font-weight: 400;
+  font-style: normal;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+}
+
+.link {
+  text-decoration: none;
+}
+.link:active {
+  text-decoration: none;
+}
+.link:visited {
+  text-decoration: none;
+}
+.link:link {
+  text-decoration: none;
+}
+
+.submit,
+.input {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  outline-offset: 0;
+  border: 0;
+  padding: 0;
+}
+
+.link:hover,
+.link,
+.submit:hover,
+.submit {
+  transition: 0.05s ease-in 0.05s;
+}
+
+.heading {
+  font-size: 20px;
+  line-height: 40px;
+  color: #fcfcfc;
   padding: 75px 0 25px;
   display: flex;
   justify-content: center;
-  font-family: "Gilroy Medium";
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 40px;
-  font-style: normal;
-  color: #FCFCFC;
   width: 100%;
 }
 
 .follow {
   display: flex;
-  justify-content: center;
 }
 
 .input {
-  background-color: rgba(0, 0, 0, 0);
-  outline: none;
-  outline-offset: 0;
-  border: 0;
-  color: #FCFCFC;
-  font-family: "Gilroy Medium";
-  font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 22px;
-  border-bottom: 1px solid #FCFCFC;
+  color: #fcfcfc;
+  border-bottom: 1px solid #fcfcfc;
   padding: 0 0 10px 0;
   display: block;
-  width: calc(100% - 50px);
+  width: calc(100% - 100px);
   margin: 0 0 0 24px;
 }
+.input::-moz-placeholder {
+  color: #fcfcfc;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.6;
+}
 .input::placeholder {
-  color: #FCFCFC;
-  font-family: "Gilroy Medium";
-  font-weight: 400;
-  font-style: normal;
+  color: #fcfcfc;
   font-size: 16px;
   line-height: 22px;
   opacity: 0.6;
 }
 
 .submit {
-  display: flex;
-  align-self: flex-end;
-  border-radius: 2px;
-  outline: none;
-  box-sizing: border-box;
-  padding: 0;
-  border: none;
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
-  width: 60px;
-  margin: 0 0 0 20px;
-  cursor: pointer;
   font-size: 16px;
   line-height: 22px;
+  display: flex;
+  align-self: flex-end;
+  box-sizing: border-box;
+  color: #fcfcfc;
+  width: 60px;
+  margin: 0 0 0 20px;
 }
 .submit:hover {
   opacity: 0.4;
@@ -72,33 +115,20 @@
 
 .links {
   gap: 16px;
-  display: flex;
-  flex-direction: column;
 }
 
 .link {
-  outline: none;
-  text-decoration: none;
-  font-family: "Gilroy Regular";
-  font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   line-height: 22px;
 }
 .link:visited {
-  color: #FCFCFC;
-  text-decoration: none;
+  color: #fcfcfc;
 }
 .link:hover {
   opacity: 0.6;
 }
 
-.link_bold {
-  font-family: "Gilroy Medium";
-  font-weight: 500;
-  font-style: normal;
+.linkBold {
   font-size: 18px;
   line-height: 24px;
-}
-
-/*# sourceMappingURL=Footer.module.css.map */
+} /*# sourceMappingURL=Footer.module.css.map */

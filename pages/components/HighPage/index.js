@@ -1,1 +1,1 @@
-export { default } from "./HighPage"
+export {default} from "./HighPage"

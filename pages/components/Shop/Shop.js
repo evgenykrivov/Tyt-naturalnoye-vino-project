@@ -1,15 +1,13 @@
-import styles from "./Shop.module.scss"
-import Collection from "@/pages/components/Collection"
-import WineSorting from "@/pages/components/WineSorting/WineSorting"
+import S from "./Shop.module.scss"
+import WineCollectionBrowser from "pages/components/WineCollectionBrowser"
 
-const Shop = () => (
-  <>
-    <div className={ styles.shop }>
-      <h1 className={ styles.mainText } style={ { marginBottom: "22px" } }>КОЛЛЕКЦИЯ</h1>
-      <WineSorting/>
-      <Collection/>
+const Shop = () => {
+  return (
+    <div className={S.shop}>
+      <h1 className={S.mainText}>КОЛЛЕКЦИЯ</h1>
+      <WineCollectionBrowser />
     </div>
-  </>
-)
+  )
+}
 
 export default Shop

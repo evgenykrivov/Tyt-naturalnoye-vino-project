@@ -1,11 +1,20 @@
 @import "./fonts/fonts.css";
+#__next {
+  display: flex;
+  flex-direction: column;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
 }
 
-body, h1, h2, h3, p {
+body,
+h1,
+h2,
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -13,7 +22,7 @@ body, h1, h2, h3, p {
 body {
   max-width: 576px;
   margin: 0 auto;
-  background-color: #FCFCFC;
+  background-color: wheat;
 }
 
 .no-scroll {
@@ -21,18 +30,18 @@ body {
 }
 
 #__next {
-  display: flex;
-  flex-direction: column;
   height: 100vh;
   max-width: 1280px;
   min-width: 344px;
   margin: 0 auto;
+  background-color: #fcfcfc;
 }
 
 main {
   flex-grow: 1;
-  display: flex;
   margin: 120px 0 0 0;
+  background-color: #fcfcfc;
+  padding: 0 0 100px 0;
 }
 
 header {
@@ -43,16 +52,13 @@ header {
   width: 100%;
   max-width: 576px;
   z-index: 10;
-  background-color: rgb(252, 252, 252);
   padding: 0 0 16px 0;
+  background-color: #fcfcfc;
 }
 
 footer {
-  margin: 100px 0 0 0;
-  background-color: #C04728;
+  background-color: #c04728;
   padding: 0 0 66px 0;
 }
-
-
 
 /*# sourceMappingURL=globals.css.map */

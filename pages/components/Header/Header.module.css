@@ -1,6 +1,15 @@
+.logoImage:hover,
+.logoImage {
+  transition: 0.05s ease-in 0.05s;
+}
+
 .logoImage {
   margin: 24px 0 0 16px;
-  color: #FCFCFC;
+  color: #fcfcfc;
+  cursor: pointer;
+}
+.logoImage:hover {
+  opacity: 0.6;
 }
 
 .container {
@@ -12,13 +21,4 @@
 .imageMenu {
   display: flex;
   margin: 47px 15px 0 0;
-}
-
-.menu {
-  display: inline-block;
-  box-shadow: none;
-  background: transparent none;
-  cursor: pointer;
-}
-
-/*# sourceMappingURL=Header.module.css.map */
+} /*# sourceMappingURL=Header.module.css.map */

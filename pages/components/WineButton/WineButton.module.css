@@ -1,0 +1,41 @@
+.buttonType {
+  font-family: "Gilroy Light";
+  font-weight: 300;
+  font-style: normal;
+}
+
+.buttonType {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.buttonType {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttonTypeActive,
+.buttonType:hover,
+.buttonType {
+  transition: 0.05s ease-in 0.05s;
+}
+
+.buttonType {
+  font-size: 20px;
+  line-height: 22px;
+  box-sizing: border-box;
+  padding: 0;
+  color: #c04728;
+  width: -moz-max-content;
+  width: max-content;
+}
+.buttonType:hover {
+  color: #6ba5a9;
+  margin: 0 0 0 20px;
+}
+
+.buttonTypeActive {
+  color: #6ba5a9;
+  margin: 0 0 0 20px;
+} /*# sourceMappingURL=WineButton.module.css.map */

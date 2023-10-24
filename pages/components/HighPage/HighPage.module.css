@@ -1,57 +1,60 @@
+.extension,
+.main,
+.additionally,
+.about,
+.nameTransfer,
+.name {
+  font-family: "Gilroy Medium";
+  font-weight: 500;
+  font-style: normal;
+}
+
+.additionally,
+.heading,
+.HighPage {
+  display: flex;
+  flex-direction: column;
+}
+
 .HighPage {
   position: relative;
-  flex-direction: column;
-  display: flex;
 }
-.HighPage__text {
-  font-family: "Gilroy Medium";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 45px;
-  line-height: 45px;
-  margin: 0 auto;
-  max-width: calc(100% - 32px);
-  text-align: right;
-  height: 106px;
-  color: rgb(192, 71, 40);
-  padding: 0 0 35px 0;
-}
-.HighPage__transfer {
-  float: right;
-  font-family: "Gilroy Medium";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 43px;
-  line-height: 45px;
-  padding: 0 0 0 12px;
-  width: 100%;
-}
-@media screen and (max-width: 344px) {
-  .HighPage__transfer {
-    float: left;
-    padding: 0;
-  }
-  .HighPage__text {
-    text-align: left;
-  }
-}
-.HighPage__image {
+
+.image {
   margin: 0 auto;
   display: flex;
   align-self: center;
 }
 
+.name {
+  font-size: 45px;
+  line-height: 45px;
+  color: #c04728;
+  margin: 0 auto;
+  max-width: calc(100% - 32px);
+  text-align: right;
+  height: 106px;
+  padding: 0 0 35px 0;
+}
+
+.nameTransfer {
+  font-size: 43px;
+  line-height: 45px;
+  float: right;
+  padding: 0 0 0 12px;
+  width: 100%;
+}
+
 .container {
   display: flex;
+  max-width: -moz-max-content;
   max-width: max-content;
   align-self: flex-end;
   margin: 0 15px 0 0;
 }
-.container__about {
-  font-family: "Gilroy Medium";
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(192, 71, 40);
+
+.about {
+  color: #c04728;
 }
 
 .description {
@@ -59,42 +62,30 @@
 }
 
 .heading {
-  display: flex;
-  flex-direction: column;
   margin: 0 0 37px;
 }
-.heading__main {
-  font-family: "Gilroy Medium";
-  font-weight: 400;
-  font-style: normal;
-  font-size: 32px;
-  line-height: 27.5px;
-  color: rgb(192, 71, 40);
-}
-.heading__extension {
-  margin: 7px 0 0 0;
-  font-family: "Gilroy Medium";
-  font-weight: 400;
-  font-style: normal;
-  align-self: flex-end;
-  font-size: 32px;
-  line-height: 27.5px;
-  color: rgb(192, 71, 40);
-}
-.heading__extension_blueColor {
-  color: #6BA5A9;
-}
 
-.about {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  font-family: "Gilroy Regular";
-  font-weight: 400;
-  font-style: normal;
-  color: rgb(192, 71, 40);
+.additionally {
   font-size: 16px;
   line-height: 25px;
+  gap: 40px;
+  color: #c04728;
 }
 
-/*# sourceMappingURL=HighPage.module.css.map */
+.main {
+  font-size: 32px;
+  line-height: 27.5px;
+  color: #c04728;
+}
+
+.extension {
+  font-size: 32px;
+  line-height: 27.5px;
+  margin: 7px 0 0 0;
+  align-self: flex-end;
+  color: #c04728;
+}
+
+.extensionBlueColor {
+  color: #6ba5a9;
+} /*# sourceMappingURL=HighPage.module.css.map */

@@ -1,18 +1,17 @@
-import React, { useState } from "react"
-import styles from "./Menu.module.scss"
+import React, {useState} from "react"
+import S from "./Menu.module.scss"
 import Link from "next/link"
 import burger from "@/public/burget.svg"
 import Image from "next/image"
-import { linkName } from "@/pages/utils/varibles"
-
+import {linkName} from "@/utils/variables"
 
 //to do:
 // If width > 756px then hide menu
 
-function Menu (props) {
-  const [ isOpen, setIsOpen ] = useState(false)
-  const [ isWidth, setWidth ] = useState(0)
-  const [ isHeight, setHeight ] = useState(0)
+function Menu({removeScroll}) {
+  const [isOpen, setIsOpen] = useState(false)
+  const [isWidth, setWidth] = useState(0)
+  const [isHeight, setHeight] = useState(0)
 
   const handleMenu = () => {
     toggleMenu()
@@ -20,11 +19,10 @@ function Menu (props) {
   }
 
   const toggleMenu = () => {
-    if ( isOpen ) {
-      document.body.classList.remove("no-scroll") // Удалить класс для разрешения скроллинга
-    } else {
-      document.body.classList.add("no-scroll") // Добавить класс для запрета скроллинга
-    }
+    const list = document.body.classList
+    const NO_SCROLL_CLASS = "no-scroll"
+
+    isOpen ? list.remove(NO_SCROLL_CLASS) : list.add(NO_SCROLL_CLASS)
     setIsOpen(!isOpen)
   }
 
@@ -34,19 +32,23 @@ function Menu (props) {
   }
 
   return (
-    <div className={ styles.burgerMenu }>
-      <button className={ styles.burgerButton } onClick={ handleMenu }>
-        <Image src={ burger } alt="Burger menu"/>
+    <div className={S.burgerMenu}>
+      <button className={S.burgerButton} onClick={handleMenu}>
+        <Image src={burger} alt="Burger menu" />
       </button>
-      { isOpen && (
-        <div className={ styles.menu } style={ { width: isWidth, height: isHeight } }>
-          { linkName.map(e => (
-            <Link key={ e.name } className={ styles.link } onClick={ props.removeScroll } href={ e.link }>
-              { e.name }
+      {isOpen && (
+        <div className={S.menu} style={{width: isWidth, height: isHeight}}>
+          {linkName.map(e => (
+            <Link
+              key={e.name}
+              className={S.link}
+              onClick={removeScroll}
+              href={e.link}>
+              {e.name}
             </Link>
-          )) }
+          ))}
         </div>
-      ) }
+      )}
     </div>
   )
 }

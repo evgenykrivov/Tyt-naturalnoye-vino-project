@@ -1,0 +1,39 @@
+.aboutBold {
+  font-family: "Gilroy Medium";
+  font-weight: 500;
+  font-style: normal;
+}
+
+.about {
+  font-family: "Gilroy Light";
+  font-weight: 300;
+  font-style: normal;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+}
+
+.wineImage {
+  display: flex;
+  margin: 0 30px 0 0;
+}
+
+.info {
+  min-width: 135px;
+}
+
+.about {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.aboutBold {
+  font-size: 16px;
+  line-height: 22px;
+} /*# sourceMappingURL=WineCollectionItem.module.css.map */

@@ -1,0 +1,25 @@
+@import "../../../styles/index";
+
+.container {
+  display: flex;
+}
+
+.wineImage {
+  display: flex;
+  margin: 0 30px 0 0;
+}
+
+.info {
+  @extend %column-flex;
+  min-width: 135px;
+}
+
+.about {
+  @extend %extend-font-light;
+  @include size-font(14px, 20px);
+}
+
+.aboutBold {
+  @extend %extend-font-medium;
+  @include size-font(16px, 22px);
+}

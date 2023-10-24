@@ -1,24 +1,24 @@
+@import "../../../styles/index";
+
 .logoImage {
+  @extend %basic-animation;
   margin: 24px 0 0 16px;
-  color: #FCFCFC;
+  color: $color-secondary;
+  cursor: pointer;
+
+  &:hover {
+    @extend %basic-animation;
+    opacity: 0.6;
+  }
 }
 
 .container {
   display: flex;
   flex-grow: 1;
   justify-content: space-between;
-
 }
 
 .imageMenu {
   display: flex;
   margin: 47px 15px 0 0;
 }
-
-.menu {
-  display: inline-block;
-  box-shadow: none;
-  background: transparent none;
-  cursor: pointer;
-}
-

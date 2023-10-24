@@ -1,4 +1,13 @@
 .WidgetSize {
+  font-family: "Gilroy Light";
+  font-weight: 300;
+  font-style: normal;
+}
+
+.WidgetSize {
+  font-size: 16px;
+  line-height: 18px;
+  color: black;
   display: flex;
   position: absolute;
   min-width: 100px;
@@ -9,11 +18,12 @@
   transform: translate(-50%);
   border-radius: 5px;
   padding: 5px 15px;
+  z-index: 11;
 }
 
 @media screen and (1200px < width) {
   .WidgetSize::before {
-    content: "XL w";
+    content: "XL width";
   }
   .WidgetSize {
     background-color: red;
@@ -21,7 +31,7 @@
 }
 @media screen and (768px < width <= 1200px) {
   .WidgetSize::before {
-    content: "X w";
+    content: "X width";
   }
   .WidgetSize {
     background-color: orange;
@@ -29,7 +39,7 @@
 }
 @media screen and (400px < width <= 768px) {
   .WidgetSize::before {
-    content: "M w";
+    content: "M width";
   }
   .WidgetSize {
     background-color: yellow;
@@ -37,11 +47,9 @@
 }
 @media screen and (width <= 400px) {
   .WidgetSize::before {
-    content: "S w";
+    content: "S width";
   }
   .WidgetSize {
     background-color: greenyellow;
   }
-}
-
-/*# sourceMappingURL=WidgetSize.module.css.map */
+} /*# sourceMappingURL=WidgetSize.module.css.map */

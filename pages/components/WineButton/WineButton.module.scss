@@ -1,0 +1,25 @@
+@import "../../../styles/index";
+
+.buttonType {
+  @extend %column-flex;
+  @extend %extend-font-light;
+  @include size-font(20px, 22px);
+  @extend %button-basic;
+  @extend %basic-animation;
+  box-sizing: border-box;
+  padding: 0;
+  color: $color-primary;
+  width: max-content;
+
+  &:hover {
+    @extend %basic-animation;
+    color: $color-success;
+    margin: 0 0 0 20px;
+  }
+}
+
+.buttonTypeActive {
+  @extend %basic-animation;
+  color: $color-success;
+  margin: 0 0 0 20px;
+}

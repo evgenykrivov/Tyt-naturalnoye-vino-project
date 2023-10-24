@@ -1,48 +1,33 @@
+@import "../../../styles/index";
+
 .HighPage {
+  @extend %column-flex;
   position: relative;
-  flex-direction: column;
+}
+
+.image {
+  margin: 0 auto;
   display: flex;
+  align-self: center;
+}
 
-  &__text {
-    font-family: 'Gilroy Medium';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 45px;
-    line-height: 45px;
-    margin: 0 auto;
-    max-width: calc(100% - 32px);
-    text-align: right;
-    height: 106px;
-    color: rgba(192, 71, 40, 1);
-    padding: 0 0 35px 0;
-  }
+.name {
+  @extend %extend-font-medium;
+  @include size-font(45px, 45px);
+  color: $color-primary;
+  margin: 0 auto;
+  max-width: calc(100% - 32px);
+  text-align: right;
+  height: 106px;
+  padding: 0 0 35px 0;
+}
 
-  &__transfer {
-    float: right;
-    font-family: 'Gilroy Medium';
-    font-weight: 400;
-    font-style: normal;
-    font-size: 43px;
-    line-height: 45px;
-    padding: 0 0 0 12px;
-    width: 100%;
-  }
-
-  @media screen and (max-width: 344px) {
-    &__transfer {
-      float: left;
-      padding: 0;
-    }
-    &__text {
-      text-align: left;
-    }
-  }
-
-  &__image {
-    margin: 0 auto;
-    display: flex;
-    align-self: center;
-  }
+.nameTransfer {
+  @extend %extend-font-medium;
+  @include size-font(43px, 45px);
+  float: right;
+  padding: 0 0 0 12px;
+  width: 100%;
 }
 
 .container {
@@ -50,13 +35,11 @@
   max-width: max-content;
   align-self: flex-end;
   margin: 0 15px 0 0;
+}
 
-  &__about {
-    font-family: "Gilroy Medium";
-    font-weight: 400;
-    font-style: normal;
-    color: rgba(192, 71, 40, 1);
-  }
+.about {
+  @extend %extend-font-medium;
+  color: $color-primary;
 }
 
 .description {
@@ -64,43 +47,32 @@
 }
 
 .heading {
-  display: flex;
-  flex-direction: column;
+  @extend %column-flex;
   margin: 0 0 37px;
-
-  &__main {
-    font-family: "Gilroy Medium";
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 27.5px;
-    color: rgba(192, 71, 40, 1);
-  }
-
-  &__extension {
-    margin: 7px 0 0 0;
-    font-family: "Gilroy Medium";
-    font-weight: 400;
-    font-style: normal;
-    align-self: flex-end;
-    font-size: 32px;
-    line-height: 27.5px;
-    color: rgba(192, 71, 40, 1);
-
-    &_blueColor {
-      color: #6BA5A9;
-    }
-  }
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
+.additionally {
+  @extend %column-flex;
+  @extend %extend-font-medium;
+  @include size-font(16px, 25px);
   gap: 40px;
-  font-family: "Gilroy Regular";
-  font-weight: 400;
-  font-style: normal;
-  color: rgba(192, 71, 40, 1);
-  font-size: 16px;
-  line-height: 25px;
+  color: $color-primary;
+}
+
+.main {
+  @extend %extend-font-medium;
+  @include size-font(32px, 27.5px);
+  color: $color-primary;
+}
+
+.extension {
+  @extend %extend-font-medium;
+  @include size-font(32px, 27.5px);
+  margin: 7px 0 0 0;
+  align-self: flex-end;
+  color: $color-primary;
+}
+
+.extensionBlueColor {
+  color: $color-success;
 }

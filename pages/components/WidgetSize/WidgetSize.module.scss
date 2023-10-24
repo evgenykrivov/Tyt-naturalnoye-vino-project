@@ -1,4 +1,9 @@
+@import "../../../styles/index";
+
 .WidgetSize {
+  @extend %extend-font-light;
+  @include size-font(16px, 18px);
+  color: black;
   display: flex;
   position: absolute;
   min-width: 100px;
@@ -9,11 +14,12 @@
   transform: translate(-50%);
   border-radius: 5px;
   padding: 5px 15px;
+  z-index: 11;
 }
 
 @media screen and (1200px < width) {
   .WidgetSize::before {
-    content: "XL w";
+    content: "XL width";
   }
 
   .WidgetSize {
@@ -23,7 +29,7 @@
 
 @media screen and (768px < width <= 1200px) {
   .WidgetSize::before {
-    content: "X w";
+    content: "X width";
   }
 
   .WidgetSize {
@@ -33,7 +39,7 @@
 
 @media screen and (400px < width <= 768px) {
   .WidgetSize::before {
-    content: "M w";
+    content: "M width";
   }
 
   .WidgetSize {
@@ -43,7 +49,7 @@
 
 @media screen and (width <= 400px) {
   .WidgetSize::before {
-    content: "S w";
+    content: "S width";
   }
 
   .WidgetSize {
