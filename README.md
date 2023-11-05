@@ -8,6 +8,8 @@ It is developed using cutting-edge technologies such as Next.js, Docker, Yarn, R
 
 This app is based on a template - https://github.com/evgenytryzo/Layout-App
 
+[Miro Project Development Plan -](https://miro.com/app/board/uXjVMtMy3cg=/?share_link_id=424645293489) https://miro.com/app/board/uXjVMtMy3cg=/?share_link_id=424645293489
+
 ## Key Features
 
 ### 1. Wine Collections
@@ -106,4 +108,4 @@ http://localhost:4000/
 We welcome contributions and improvements from the community. If you have ideas, suggestions, or want
 to report a bug, please create an Issue or Pull Request on GitHub.
 
-#### Interesting ideas and comments on the project are accepted for the kidney: g0022@inbox.ru
+#### Interesting ideas and comments on the project are accepted for the kidney: evgenykrivov@tryzo.ru
