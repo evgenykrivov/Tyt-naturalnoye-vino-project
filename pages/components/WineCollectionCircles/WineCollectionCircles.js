@@ -3,8 +3,8 @@ import circlesImage from "../../../public/circle.svg"
 import circles_active from "../../../public/circle_active.svg"
 import S from "./WineCollectionCircles.module.scss"
 
-const WineCollectionCircles = ({collection, currentIndex}) => {
-  if (!collection || currentIndex === "undefined" || currentIndex === "null") {
+const WineCollectionCircles = ({collection = [], currentIndex = 0}) => {
+  if (!collection || currentIndex === undefined || currentIndex === null) {
     return null
   }
 
