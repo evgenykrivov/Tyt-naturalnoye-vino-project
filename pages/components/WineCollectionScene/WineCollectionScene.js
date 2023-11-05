@@ -3,14 +3,17 @@ import WineCollectionItem from "@/pages/components/WineCollectionItem"
 import WineCollectionCircles from "@/pages/components/WineCollectionCircles"
 import React from "react"
 
-const WineCollectionScene = ({collection, currentIndex}) => (
-  <div className={S.item}>
-    <WineCollectionItem item={collection[currentIndex]} />
-    <WineCollectionCircles
-      collection={collection}
-      currentIndex={currentIndex}
-    />
-  </div>
-)
+const WineCollectionScene = ({collection = [], currentIndex = 0}) => {
+  console.log(collection, currentIndex)
+  return (
+    <div className={S.item}>
+      <WineCollectionItem item={collection[currentIndex]} />
+      <WineCollectionCircles
+        collection={collection}
+        currentIndex={currentIndex}
+      />
+    </div>
+  )
+}
 
 export default WineCollectionScene
