@@ -1,0 +1,22 @@
+@import "../../../styles/index";
+
+.news_name {
+  @include size-font(16px, 22px);
+  @extend %extend-font-medium;
+  color: $color-primary;
+  margin: 0 0 24px 0;
+}
+
+.designation {
+  @include size-font(16px, 22px);
+  @extend %extend-font-light;
+  color: $color-primary;
+  margin: 0 20px 44px 0;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 340px;
+}

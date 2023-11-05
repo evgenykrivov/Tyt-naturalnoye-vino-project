@@ -1,0 +1,15 @@
+@import "../../../styles/index";
+
+.news {
+  @extend %column-flex;
+  margin: 0 20px;
+}
+
+.title {
+  color: $color-primary;
+  @include size-font(32px, 27.5px);
+  @extend %extend-font-medium;
+  height: max-content;
+  margin: 0 0 40px 0;
+}
+

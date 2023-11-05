@@ -4,8 +4,11 @@ import circles_active from "../../../public/circle_active.svg"
 import S from "./WineCollectionCircles.module.scss"
 
 const WineCollectionCircles = ({collection, currentIndex}) => {
-  const arrayLength = collection.length < 5 ? collection.length : 5
+  if (!collection || currentIndex === "undefined" || currentIndex === "null") {
+    return null
+  }
 
+  const arrayLength = collection.length < 5 ? collection.length : 5
   return (
     <div className={S.circles}>
       {Array.from({length: arrayLength}, (_, index) => (

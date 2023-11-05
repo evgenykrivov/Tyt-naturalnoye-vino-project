@@ -5,6 +5,10 @@ const nextConfig = {
   reactStrictMode: true,
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")]
+  },
+  images: {
+    loader: "default",
+    domains: ["localhost"]
   }
 }
 
