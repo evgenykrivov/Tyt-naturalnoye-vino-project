@@ -3,7 +3,6 @@ import Image from "next/image"
 
 const NewsCollectionItem = ({name, designation, news_image}) => {
   const image = `/news/news_${news_image}.png`
-  console.log(image)
   return (
     <div className={S.container}>
       <h2 className={S.news_name}>{name}</h2>

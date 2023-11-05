@@ -1,0 +1,24 @@
+@import "../../../styles/index";
+
+.events {
+  margin: 0 20px 0;
+}
+
+.heading {
+  @extend %column-flex;
+  margin: 0 0 37px;
+}
+
+.main {
+  @extend %extend-font-medium;
+  @include size-font(32px, 27.5px);
+  color: $color-primary;
+}
+.extension {
+  @extend %extend-font-medium;
+  @include size-font(32px, 27.5px);
+  margin: 7px 0 0 0;
+  align-self: flex-end;
+  color: $color-primary;
+  color: $color-success;
+}

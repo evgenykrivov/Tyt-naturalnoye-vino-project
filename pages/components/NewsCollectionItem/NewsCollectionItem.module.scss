@@ -19,10 +19,24 @@
 }
 
 .image {
-  width: 373px;
-  height: 311px;
+  width: 303px;
+  height: 241px;
   position: relative;
-    display: flex;
+  display: flex;
   align-items: center;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 568px) {
+  .image {
+    width: 373px;
+    height: 311px;
+  }
+}
+
+@media screen and (min-width: px) {
+  .image {
+    width: 373px;
+    height: 311px;
+  }
 }
