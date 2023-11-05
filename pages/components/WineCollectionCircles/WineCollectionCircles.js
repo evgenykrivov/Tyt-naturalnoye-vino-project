@@ -4,7 +4,7 @@ import circles_active from "../../../public/circle_active.svg"
 import S from "./WineCollectionCircles.module.scss"
 
 const WineCollectionCircles = ({collection = [], currentIndex = 0}) => {
-  if (!collection || currentIndex === "undefined" || currentIndex === "null") {
+  if (!collection || currentIndex === undefined || currentIndex === null) {
     return null
   }
 
